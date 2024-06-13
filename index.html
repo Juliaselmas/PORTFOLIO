@@ -5,31 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
     <title>PORTFOLIO - JULIA SVANTESSON</title>
 </head>
 <body>
-    <div id="header">
+    <section id="header">
         <h1>JULIA SVANTESSON</h1>
         <div id="link-section">
-            <a href="/.">link to projects</a>
-            <a href="/.">link to about me</a>
-            <a href="/.">link to contacts</a>
+            <a href="/projects.html">PROJECTS</a>
+            <a href="/aboutme.html">ABOUT ME</a>
+            <a href="/contact.html">CONTACT</a>
         </div>
-    </div>
+    </section>
 
-    <div id="content-container">
-        <div id="side-container">
-            <a href="/.">link to GitHub</a>
-            <a href="/.">link to LinkedIn</a>
+    <main id="content-container">
+        <section id="side-container">
+            <a href="https://github.com/Juliaselmas"><img src="logos/Github-Logos/github-mark.png" alt="GitHub-logo" width="60px"></a>
+            <a href="https://www.linkedin.com/in/svantesson-julia/"><img src="logos/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn-logo" width="60px"></a>
+
             <h2>Probably some side menu or applications here?</h2>
-        </div>
-        <div id="main-container">
-            <h2>This is where the main content will be.</h2>
-        </div>
-    </div>
+        </section>
+        <section id="main-container">
+            <div class="project-card">
+                <img src="images/Preview-PokemonApp.png" alt="preview of project">
+                <div class="text-container">
+                <h3 class="project-title">Title of project</h3>
+                <p class="project-preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="/.">Read more</a>
+                <a href="/.">Github repo</a>
+            </div>
+            </div>
+            <div class="project-card">
+                <img src="images/Preview-ProductivityApp.png" alt="preview of project" width="450px">
+                <div class="text-container">
+                <h3 class="project-title">Title of project</h3>
+                <p class="project-preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="/.">Read more</a>
+                <a href="/.">Github repo</a>
+            </div>
+            </div>
+            <div class="project-card">
+                <img src="images/Preview-Quiz.png" alt="preview of project" width="450px">
+                <div class="text-container">
+                <h3 class="project-title">Title of project</h3>
+                <p class="project-preview-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="/.">Read more</a>
+                <a href="/.">Github repo</a>
+            </div>
+            </div>
+            
+
+            
+            <a href="/projects.html" id="more-projects-link">More projects-></a>
+
+        </section>
+    </main>
     
-    <div id="footer">
-        <h3>This is the footer.</h3>
-    </div>
+    <section id="footer">
+        <h4>JULIA SVANTESSON</h4>
+        <p>Frontend student graduating in May 2025. Actively seeking internship starting December, 2024.</p>
+    </section>
 </body>
 </html>
