@@ -1,11 +1,12 @@
 $fontHeader: "Oswald", sans-serif;
-$fontHeadlines: "GFS Didot", serif;
-$fontText: "GFS Didot", serif;
-$fontLinks: Verdana;
+$fontHeadlines: "Urbanist", sans-serif;
+$fontText: "Urbanist", sans-serif;
+$fontLinks: "Urbanist", sans-serif;
 
 $fontSizeHeader: 90px;
 $fontSizeHeadlines: 20px;
 $fontSizeText: 14px;
+$fontSizeTextFooter: 14px;
 $fontsizeLinks: 16px;
 
 .gfs-didot-regular {
@@ -20,7 +21,6 @@ $fontsizeLinks: 16px;
     font-style: normal;
   }
 
-  // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 700
 
 .oswald-headline {
@@ -28,6 +28,15 @@ $fontsizeLinks: 16px;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
+  }
+
+// <weight>: Use a value from 100 to 900
+
+.urbanist-text {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style:normal;
   }
   
 
@@ -37,6 +46,7 @@ $fontsizeLinks: 16px;
 body {
     padding: 0px 30px;
     color: #323232;
+    min-height: 100vh;
     box-sizing: border-box;
 
 }
@@ -73,14 +83,73 @@ body {
 }
 
 #content-container {
-    
     padding: 30px 0px;
     width: 100%;
     display: flex;
+    flex: 1;
     flex-direction: row;
+    justify-content: space-between;
 
     #side-container {
-        background-color: rgb(243, 251, 236);
+        
+        border-radius: 10px;
+        padding: 50px 30px;
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            justify-content: flex-end;
+            align-self: center;
+            font-family: $fontHeader;
+            font-size: 15rem;
+            line-height: 0.65;
+            margin: 0px;   
+        }
+
+        h2 {
+            justify-content: flex-start;
+            align-self: center;
+            font-family: $fontHeader;
+            font-size: 6.5rem;
+            margin: 0px;            
+        }
+
+        #text-link-container {
+            display:flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            #text-box {
+                justify-content: flex-end;
+                align-items: flex-end;
+    
+                p {
+                    
+                    align-self: center;
+                    font-family: $fontHeadlines;
+                    font-size: 20px;
+                    margin: 0px;
+                }
+
+            }
+
+            #side-container-links {
+
+                a {
+                    margin: 0px 10px;
+                    font-family: $fontLinks;
+                    text-decoration: none;
+                    color: #323232;
+                }
+            }
+
+        }
+ 
+    }
+
+    #side-container-contact {
+        background-color: bisque;
         border-radius: 10px;
         padding: 50px 30px;
         max-width: 15%;
@@ -91,38 +160,144 @@ body {
             justify-content: flex-end;
             align-self: center;
             font-family: $fontHeader;
-            font-size: 140px;
+            font-size: 8rem;
             line-height: 0.65;
-            margin: 0px;
-            
-            
+            margin: 0px;   
         }
 
         h2 {
             justify-content: flex-start;
             align-self: center;
             font-family: $fontHeader;
-            font-size: 60px;
-            margin: 0px;
-            
-            
+            font-size: 3.5rem;
+            margin: 0px;            
         }
 
-        a {
-            margin: 0px 10px;
-            font-family: $fontLinks;
-            text-decoration: none;
+        #text-link-container {
+            display:flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            #text-box {
+                justify-content: flex-end;
+                align-items: flex-end;
+    
+                p {
+                    
+                    align-self: center;
+                    font-family: $fontHeadlines;
+                    font-size: 20px;
+                    margin: 0px;
+                }
+
+            }
+
+
         }
+ 
+    }
+
+    #side-container-aboutme {
+        padding: 40px 30px;
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            justify-content: flex-end;
+            align-self: flex-start;
+            font-family: $fontHeader;
+            font-size: 8rem;
+            line-height: 0.65;
+            margin: 0px;   
+            z-index: 11;
+        }
+
+        h2 {
+            justify-content: flex-start;
+            align-self: flex-start;
+            font-family: $fontHeader;
+            font-size: 3.5rem;
+            margin: 0px; 
+            z-index: 11;           
+        }
+
+        img {
+            max-height: 81vh;
+            margin: 20px 15px 0px 20px;
+            position: fixed;
+            bottom: 0;
+            z-index: 10;
+        }
+
+        #text-link-container {
+            display:flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            #text-box {
+                justify-content: flex-end;
+                align-items: flex-end;
+    
+                p {
+                    
+                    align-self: center;
+                    font-family: $fontHeadlines;
+                    font-size: 20px;
+                    margin: 0px;
+                }
+
+            }
+
+
+        }
+ 
     }
 
     #main-container {
-        
-        padding: 300px 30px 30px 30px;
+       
+        padding: 20px 10px;
         width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
         flex-wrap: wrap;
+
+        #text-box {
+           
+            margin: 20px 10px;
+            
+
+            p {
+                justify-content: flex-start;
+                align-self:flex-start;
+                font-family: $fontHeadlines;
+                font-size:1.5rem;
+                margin: 0px;
+    
+            }
+
+        }
+
+        #link-section {
+
+            margin: 250px 0px 30px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            a {
+                margin: 30px 10px;
+                font-family: $fontLinks;
+                font-size: 2rem;
+                text-decoration: none;
+                color: #323232;
+            }
+
+            a:hover {
+                font-weight: bold;
+            }
+        }
 
         #more-projects-link {
             margin: 20px 10px;
@@ -136,7 +311,7 @@ body {
             
             border: 1px solid black;
             border-radius: 8px;
-            max-width: 25%;
+            max-width: 20%;
             padding: 10px;
             margin: 10px 30px;
             display: flex;
@@ -153,13 +328,12 @@ body {
                 filter: none;
             }
 
+            
+
             .text-container {
                 padding: 5px 10px 20px 10px;
 
-                h3 {
-                    margin: 10px 0px;
-                    font-size: $fontSizeHeadlines;
-                }
+                
     
                 p {
                     margin: 20px 0px 40px 0px;
@@ -184,37 +358,142 @@ body {
 
         }
     }
+
+    #main-container-contact {
+       
+        padding: 20px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        #text-box {
+           background-color: beige;
+            margin: 20px 10px;
+            
+
+            p {
+                justify-content: flex-start;
+                align-self:flex-start;
+                font-family: $fontHeadlines;
+                font-size:1.5rem;
+                margin: 0px;
+    
+            }
+
+        }
+
+        #link-section {
+            background-color: #edad93;
+            margin: 250px 0px 30px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            a {
+                margin: 30px 10px;
+                font-family: $fontLinks;
+                font-size: 2rem;
+                text-decoration: none;
+                color: #323232;
+            }
+
+            a:hover {
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    #main-container-aboutme {
+        padding: 40px 20px 40px 30px;
+        max-width: 60%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        #text-box {
+           margin: 15px;
+           max-width: 65%;
+           display: flex;
+           flex-direction: column;
+           align-items: flex-start;
+           justify-content: flex-end;
+           
+            h2 {
+                font-family: $fontHeadlines;
+                font-size:2rem;
+                margin: 10px 0px;
+            }
+        
+            p {
+                font-family: $fontHeadlines;
+                font-size:1rem;
+                margin: 0px;
+            }
+
+        }
+
+        img {
+            max-height: 90vh;
+            margin: 20px 15px 0px 20px;
+            position: fixed;
+            bottom: 0;
+        }
+
+        #link-section {
+            margin: 250px 0px 30px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            a {
+                margin: 30px 10px;
+                font-family: $fontLinks;
+                font-size: 2rem;
+                text-decoration: none;
+                color: #323232;
+            }
+
+            a:hover {
+                font-weight: bold;
+            }
+        }
+
+    }
 }
 
+
 #footer {
-    background-color: #ffffff;
-    border: 1px solid black;
+   background-color: rgba(255, 255, 255, 0.3);
     padding: 20px 0px;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 11;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .text-container {
+    
+    #footer-content-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
-    h4 {
-        margin: 10px 0px 0px 0px;
-        font-family: $fontHeadlines;
-        font-size: $fontSizeText;
-    }
 
     p {
+        color: #323232;
         text-align: center;
-        margin: 20px 0px 0px 0px;
+        margin: 15px 10px;
         font-family: $fontText;
-        font-size: $fontSizeText;
-    }
-
+        font-size: $fontSizeTextFooter;
+        align-items: center;
     }
 
     #footer-links-container {
@@ -229,4 +508,8 @@ body {
             color: #323232;
         }
     }
+
+    }
+
+    
 }

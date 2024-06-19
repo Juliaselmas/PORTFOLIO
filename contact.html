@@ -1,3 +1,5 @@
+<!-- Behåll id på alla divar men ge klasser för specifik styling på respektive sida? -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,39 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0cbc399216.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
     <title>PORTFOLIO - JULIA SVANTESSON</title>
 </head>
 <body>
-    <section id="header">
-        <h1>JULIA SVANTESSON</h1>
-        <div id="link-section">
-            <a href="/index.html">HOMEPAGE</a>
-            <a href="/projects.html">PROJECTS</a>
-            <a href="/aboutme.html">ABOUT ME</a>
-           <b><a href="/contact.html">CONTACT</a></b>
-        </div>
-    </section>
+
     <main id="content-container">
-        <section id="side-container">
-            <a href="https://github.com/Juliaselmas"><img src="logos/Github-Logos/github-mark.png" alt="GitHub-logo" width="60px"></a>
-            <a href="https://www.linkedin.com/in/svantesson-julia/"><img src="logos/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn-logo" width="60px"></a>
-
-            <a href="/index.html">Return på homepage</a>
+        <section id="side-container-aboutme">
+            <h1>JULIA</h1>
+            <h2>SVANTESSON</h2>
+            <img src="images/portraits/DSC_6794-2.jpg" alt="selfportait">
+            <div id="text-box">
+                <!-- <p>FRONT END DEVELOPER</p>
+                <p>GRADUATING MAY 2025</p> -->
+            </div>
+          
         </section>
-        <section id="main-container">
-           
-
-        </section>
+        <section id="main-container-aboutme">
+            <!-- <img src="images/portraits/DSC_6794-2.jpg" alt="selfportait"> -->
+            <div id="text-box">
+                <h2>Hi there!</h2>
+                <p><i class="fa-regular fa-envelope"></i> juliasvantesson@outlook.com / julia.svantesson@yh.nackademin.se</p>
+                <p><i class="fa-solid fa-phone-flip"></i> 073 831 0500</p>
+                <p><i class="fa-solid fa-location-dot"></i> Stockholm, Sweden</p>
+                <br><br>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa. <br><br>Qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem reru[d]um facilis est e[r]t expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellend[a]us. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. </p>
+            </div>
+            
+            <div id="link-section">
+                <a href="/projects.html">projects</a>
+                <a href="/aboutme.html">about me</a>
+                <a href="/index.html">homepage</a>
+            </div>
+            
     </main>
     
     <section id="footer">
-        <h4>JULIA SVANTESSON</h4>
-        <p>Frontend student graduating in May 2025. Actively seeking internship starting December, 2024.</p>
-    </section>
+        <div id="footer-content-container">
+            <p>Actively seeking internship starting December, 2024.</p>
+            <div id="footer-links-container">
+                <a href="https://github.com/Juliaselmas"><img src="logos/Github-Logos/github-mark.png" alt="GitHub-logo" height="20px"></a>
+                <a href="https://www.linkedin.com/in/svantesson-julia/"><img src="logos/LinkedIn-Logos/LI-In-Bug.png" alt="LinkedIn-logo" height=20px"></a>
+                <a href="/contact.html"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+        <p> Please reach out and say hi!</p>
     
+    </div>
+    </section>
 </body>
 </html>
