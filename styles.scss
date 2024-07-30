@@ -130,11 +130,22 @@ body {
                     font-family: $fontHeadlines;
                     font-size: 20px;
                     margin: 0px;
+
                 }
 
             }
 
+            #colour-container {
+                background-color: #ffe96b;
+                width: 80%;
+                height: 15px;
+                margin: 0px;
+                position: fixed;
+                z-index: 10;
+            }
+
             #side-container-links {
+                z-index: 11;
 
                 a {
                     margin: 0px 10px;
@@ -462,6 +473,132 @@ body {
             }
         }
 
+    }
+
+    #side-container-projects {
+        background-color: #edad93;
+        padding: 40px 30px;
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            justify-content: flex-end;
+            align-self: flex-start;
+            font-family: $fontHeader;
+            font-size: 8rem;
+            line-height: 0.65;
+            margin: 0px;   
+            z-index: 11;
+        }
+
+        h2 {
+            justify-content: flex-start;
+            align-self: flex-start;
+            font-family: $fontHeader;
+            font-size: 3.5rem;
+            margin: 0px; 
+            z-index: 11;           
+        }
+
+        #text-box {
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            p {
+                
+                align-self: center;
+                font-family: $fontHeadlines;
+                font-size: 20px;
+                margin: 0px;
+            }
+
+        }
+    }
+
+    #main-container-projects {
+        padding: 40px 20px 40px 30px;
+        max-width: 70%;
+        max-height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        #project-box {
+            margin: 30px 10px 10px 10px;
+            max-width: 65%;
+            height: 95%;
+            overflow: scroll;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+
+            .project-card {
+                display: flex;
+                flex-direction: row;
+                max-width: 95%;
+                margin: 0px 15px 15px 15px;
+
+                img {
+                    width: 30%;
+                    margin:0px;
+                }
+
+                .project-card-textbox {
+
+                    h3 {
+                        font-family: $fontHeadlines;
+                        margin: 20px 20px 10px 20px;
+                        font-size: 1.5rem;
+                    }
+    
+                    p {
+                        font-family: $fontHeadlines;
+                        font-size:0.8rem;
+                        margin: 10px 20px;
+                    }
+
+                }
+
+            }
+
+            .project-card:hover {
+                border: 0.5px solid black;
+            }
+            
+             h2 {
+                 font-family: $fontHeadlines;
+                 font-size:2rem;
+                 margin: 10px 0px;
+                 width: 100%;
+             }
+         
+
+            
+ 
+         }
+
+         #link-section {
+            margin: 250px 0px 30px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            a {
+                margin: 30px 10px;
+                font-family: $fontLinks;
+                font-size: 2rem;
+                text-decoration: none;
+                color: #323232;
+            }
+
+            a:hover {
+                font-weight: bold;
+            }
+        }
     }
 }
 
