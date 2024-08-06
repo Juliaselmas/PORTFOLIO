@@ -9,6 +9,11 @@ $fontSizeText: 14px;
 $fontSizeTextFooter: 14px;
 $fontsizeLinks: 16px;
 
+$colorHeadLine: #c5390a;
+$colorBtn: $colorHeadLine;
+$colorText: #232323;
+$colorBackground: #fceee5;
+
 .gfs-didot-regular {
     font-family: "GFS Didot", serif;
     font-weight: 400;
@@ -45,7 +50,8 @@ $fontsizeLinks: 16px;
 
 body {
     padding: 0px 30px;
-    color: #323232;
+    background-color: $colorBackground;
+    //color: #de632b;
     min-height: 100vh;
     box-sizing: border-box;
 
@@ -99,6 +105,7 @@ body {
         flex-direction: column;
 
         h1 {
+            color: $colorHeadLine;
             justify-content: flex-end;
             align-self: center;
             font-family: $fontHeader;
@@ -108,6 +115,7 @@ body {
         }
 
         h2 {
+            color: $colorHeadLine;
             justify-content: flex-start;
             align-self: center;
             font-family: $fontHeader;
@@ -125,7 +133,7 @@ body {
                 align-items: flex-end;
     
                 p {
-                    
+                    color: $colorText;
                     align-self: center;
                     font-family: $fontHeadlines;
                     font-size: 20px;
@@ -160,7 +168,7 @@ body {
     }
 
     #side-container-contact {
-        background-color: bisque;
+        //background-color: bisque;
         border-radius: 10px;
         padding: 50px 30px;
         max-width: 15%;
@@ -168,6 +176,7 @@ body {
         flex-direction: column;
 
         h1 {
+            color: $colorHeadLine;
             justify-content: flex-end;
             align-self: center;
             font-family: $fontHeader;
@@ -177,6 +186,7 @@ body {
         }
 
         h2 {
+            color: $colorHeadLine;
             justify-content: flex-start;
             align-self: center;
             font-family: $fontHeader;
@@ -215,6 +225,7 @@ body {
         flex-direction: column;
 
         h1 {
+            color: $colorHeadLine;
             justify-content: flex-end;
             align-self: flex-start;
             font-family: $fontHeader;
@@ -225,6 +236,7 @@ body {
         }
 
         h2 {
+            color: $colorHeadLine;
             justify-content: flex-start;
             align-self: flex-start;
             font-family: $fontHeader;
@@ -263,6 +275,48 @@ body {
 
         }
  
+    }
+
+    #side-container-projects {
+        padding: 40px 30px;
+        max-width: 30%;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            color: $colorHeadLine;
+            justify-content: flex-end;
+            align-self: flex-start;
+            font-family: $fontHeader;
+            font-size: 8rem;
+            line-height: 0.65;
+            margin: 0px;   
+            z-index: 11;
+        }
+
+        h2 {
+            color: $colorHeadLine;
+            justify-content: flex-start;
+            align-self: flex-start;
+            font-family: $fontHeader;
+            font-size: 3.5rem;
+            margin: 0px; 
+            z-index: 11;           
+        }
+
+        #text-box {
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            p {
+                color: $colorText;
+                align-self: center;
+                font-family: $fontHeadlines;
+                font-size: 20px;
+                margin: 0px;
+            }
+
+        }
     }
 
     #main-container {
@@ -475,46 +529,6 @@ body {
 
     }
 
-    #side-container-projects {
-        background-color: #edad93;
-        padding: 40px 30px;
-        max-width: 30%;
-        display: flex;
-        flex-direction: column;
-
-        h1 {
-            justify-content: flex-end;
-            align-self: flex-start;
-            font-family: $fontHeader;
-            font-size: 8rem;
-            line-height: 0.65;
-            margin: 0px;   
-            z-index: 11;
-        }
-
-        h2 {
-            justify-content: flex-start;
-            align-self: flex-start;
-            font-family: $fontHeader;
-            font-size: 3.5rem;
-            margin: 0px; 
-            z-index: 11;           
-        }
-
-        #text-box {
-            justify-content: flex-end;
-            align-items: flex-end;
-
-            p {
-                
-                align-self: center;
-                font-family: $fontHeadlines;
-                font-size: 20px;
-                margin: 0px;
-            }
-
-        }
-    }
 
     #main-container-projects {
         padding: 40px 20px 40px 30px;
@@ -526,8 +540,9 @@ body {
 
         #project-box {
             margin: 30px 10px 10px 10px;
+            padding: 65px 10px 0px 10px;
             max-width: 65%;
-            height: 95%;
+            max-height: 95%;
             overflow: scroll;
             display: flex;
             flex-direction: row;
@@ -542,31 +557,134 @@ body {
                 margin: 0px 15px 15px 15px;
 
                 img {
-                    width: 30%;
+                    border-radius: 2px;
+                    width: 35%;
                     margin:0px;
+                }
+
+                .modal-button {
+                    background-color: $colorBackground;
+                    font-family: $fontLinks;
+                    font-size: 0.8rem;
+                    color: $colorText;
+                    border-radius: 5px;
+                    border: 1px solid #232323;
+                    margin: 10px 25px;
+                    padding: 5px;
+                    
+                }
+
+                .modal-button:hover {
+                    background-color: $colorBtn;
+                    color: white;
+                    border: 1px solid $colorBtn;
                 }
 
                 .project-card-textbox {
 
+                    max-width: 45%;
+
                     h3 {
                         font-family: $fontHeadlines;
-                        margin: 20px 20px 10px 20px;
+                        margin: 20px 20px 10px 25px;
                         font-size: 1.5rem;
                     }
     
                     p {
                         font-family: $fontHeadlines;
                         font-size:0.8rem;
-                        margin: 10px 20px;
+                        margin: 10px 25px;
                     }
+
+                }
+
+                #modal {
+                    display: none;
+                    position: fixed;
+                    z-index: 15; 
+                    padding-top: 10rem;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    background-color: rgb(0,0,0);
+                    background-color: rgba(0,0,0,0.4);
+                }
+
+                .modal-content {
+                    background-color: $colorBackground;
+                    margin: auto;
+                    padding: 20px;
+                    border: 1px solid #a72f2f;
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+
+                    #link-container-projects {
+                        padding: 0px;
+                        margin: 25px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        
+
+                        a {
+                            font-family: $fontLinks;
+                            text-decoration: none;
+                            color: $colorText;
+                            font-size: 1.8rem;
+                            margin: 10px 0px 0px 20px;
+                            padding: 0px;
+                            
+                        }
+
+                        img {
+                            padding: 0px;
+                            margin: 0px;
+                            width: 2rem;
+                            
+                        }
+
+                    }
+
+        
+                    #image-container-projects {
+
+                        margin: 10px;
+
+                        display: flex;
+                        justify-content: space-between;
+
+                        img {
+                            height: 250px;
+                            width: 30%;
+                            margin: 10px;
+    
+                        }
+
+                    }
+
+                }
+
+                .close {
+                    color: #aaaaaa;
+                    float: right;
+                    font-size: $fontSizeText;
+                    font-weight: bold;
+                }
+
+                .close:hover, .close:hover {
+
+                    color: $colorBtn;
+                    text-decoration: none;
+                    cursor: pointer;
 
                 }
 
             }
 
-            .project-card:hover {
-                border: 0.5px solid black;
-            }
+            
             
              h2 {
                  font-family: $fontHeadlines;

@@ -26,7 +26,7 @@
 
 body {
   padding: 0px 30px;
-  color: #323232;
+  background-color: #fceee5;
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -74,6 +74,7 @@ body {
   flex-direction: column;
 }
 #content-container #side-container h1 {
+  color: #c5390a;
   justify-content: flex-end;
   align-self: center;
   font-family: "Oswald", sans-serif;
@@ -82,6 +83,7 @@ body {
   margin: 0px;
 }
 #content-container #side-container h2 {
+  color: #c5390a;
   justify-content: flex-start;
   align-self: center;
   font-family: "Oswald", sans-serif;
@@ -98,6 +100,7 @@ body {
   align-items: flex-end;
 }
 #content-container #side-container #text-link-container #text-box p {
+  color: #232323;
   align-self: center;
   font-family: "Urbanist", sans-serif;
   font-size: 20px;
@@ -121,7 +124,6 @@ body {
   color: #323232;
 }
 #content-container #side-container-contact {
-  background-color: bisque;
   border-radius: 10px;
   padding: 50px 30px;
   max-width: 15%;
@@ -129,6 +131,7 @@ body {
   flex-direction: column;
 }
 #content-container #side-container-contact h1 {
+  color: #c5390a;
   justify-content: flex-end;
   align-self: center;
   font-family: "Oswald", sans-serif;
@@ -137,6 +140,7 @@ body {
   margin: 0px;
 }
 #content-container #side-container-contact h2 {
+  color: #c5390a;
   justify-content: flex-start;
   align-self: center;
   font-family: "Oswald", sans-serif;
@@ -165,6 +169,7 @@ body {
   flex-direction: column;
 }
 #content-container #side-container-aboutme h1 {
+  color: #c5390a;
   justify-content: flex-end;
   align-self: flex-start;
   font-family: "Oswald", sans-serif;
@@ -174,6 +179,7 @@ body {
   z-index: 11;
 }
 #content-container #side-container-aboutme h2 {
+  color: #c5390a;
   justify-content: flex-start;
   align-self: flex-start;
   font-family: "Oswald", sans-serif;
@@ -198,6 +204,42 @@ body {
   align-items: flex-end;
 }
 #content-container #side-container-aboutme #text-link-container #text-box p {
+  align-self: center;
+  font-family: "Urbanist", sans-serif;
+  font-size: 20px;
+  margin: 0px;
+}
+#content-container #side-container-projects {
+  padding: 40px 30px;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+#content-container #side-container-projects h1 {
+  color: #c5390a;
+  justify-content: flex-end;
+  align-self: flex-start;
+  font-family: "Oswald", sans-serif;
+  font-size: 8rem;
+  line-height: 0.65;
+  margin: 0px;
+  z-index: 11;
+}
+#content-container #side-container-projects h2 {
+  color: #c5390a;
+  justify-content: flex-start;
+  align-self: flex-start;
+  font-family: "Oswald", sans-serif;
+  font-size: 3.5rem;
+  margin: 0px;
+  z-index: 11;
+}
+#content-container #side-container-projects #text-box {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#content-container #side-container-projects #text-box p {
+  color: #232323;
   align-self: center;
   font-family: "Urbanist", sans-serif;
   font-size: 20px;
@@ -364,40 +406,6 @@ body {
 #content-container #main-container-aboutme #link-section a:hover {
   font-weight: bold;
 }
-#content-container #side-container-projects {
-  background-color: #edad93;
-  padding: 40px 30px;
-  max-width: 30%;
-  display: flex;
-  flex-direction: column;
-}
-#content-container #side-container-projects h1 {
-  justify-content: flex-end;
-  align-self: flex-start;
-  font-family: "Oswald", sans-serif;
-  font-size: 8rem;
-  line-height: 0.65;
-  margin: 0px;
-  z-index: 11;
-}
-#content-container #side-container-projects h2 {
-  justify-content: flex-start;
-  align-self: flex-start;
-  font-family: "Oswald", sans-serif;
-  font-size: 3.5rem;
-  margin: 0px;
-  z-index: 11;
-}
-#content-container #side-container-projects #text-box {
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-#content-container #side-container-projects #text-box p {
-  align-self: center;
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  margin: 0px;
-}
 #content-container #main-container-projects {
   padding: 40px 20px 40px 30px;
   max-width: 70%;
@@ -408,8 +416,9 @@ body {
 }
 #content-container #main-container-projects #project-box {
   margin: 30px 10px 10px 10px;
+  padding: 65px 10px 0px 10px;
   max-width: 65%;
-  height: 95%;
+  max-height: 95%;
   overflow: scroll;
   display: flex;
   flex-direction: row;
@@ -424,21 +433,100 @@ body {
   margin: 0px 15px 15px 15px;
 }
 #content-container #main-container-projects #project-box .project-card img {
-  width: 30%;
+  border-radius: 2px;
+  width: 35%;
   margin: 0px;
+}
+#content-container #main-container-projects #project-box .project-card .modal-button {
+  background-color: #fceee5;
+  font-family: "Urbanist", sans-serif;
+  font-size: 0.8rem;
+  color: #232323;
+  border-radius: 5px;
+  border: 1px solid #232323;
+  margin: 10px 25px;
+  padding: 5px;
+}
+#content-container #main-container-projects #project-box .project-card .modal-button:hover {
+  background-color: #c5390a;
+  color: white;
+  border: 1px solid #c5390a;
+}
+#content-container #main-container-projects #project-box .project-card .project-card-textbox {
+  max-width: 45%;
 }
 #content-container #main-container-projects #project-box .project-card .project-card-textbox h3 {
   font-family: "Urbanist", sans-serif;
-  margin: 20px 20px 10px 20px;
+  margin: 20px 20px 10px 25px;
   font-size: 1.5rem;
 }
 #content-container #main-container-projects #project-box .project-card .project-card-textbox p {
   font-family: "Urbanist", sans-serif;
   font-size: 0.8rem;
-  margin: 10px 20px;
+  margin: 10px 25px;
 }
-#content-container #main-container-projects #project-box .project-card:hover {
-  border: 0.5px solid black;
+#content-container #main-container-projects #project-box .project-card #modal {
+  display: none;
+  position: fixed;
+  z-index: 15;
+  padding-top: 10rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#content-container #main-container-projects #project-box .project-card .modal-content {
+  background-color: #fceee5;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #a72f2f;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+#content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects {
+  padding: 0px;
+  margin: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects a {
+  font-family: "Urbanist", sans-serif;
+  text-decoration: none;
+  color: #232323;
+  font-size: 1.8rem;
+  margin: 10px 0px 0px 20px;
+  padding: 0px;
+}
+#content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects img {
+  padding: 0px;
+  margin: 0px;
+  width: 2rem;
+}
+#content-container #main-container-projects #project-box .project-card .modal-content #image-container-projects {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+#content-container #main-container-projects #project-box .project-card .modal-content #image-container-projects img {
+  height: 250px;
+  width: 30%;
+  margin: 10px;
+}
+#content-container #main-container-projects #project-box .project-card .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+#content-container #main-container-projects #project-box .project-card .close:hover, #content-container #main-container-projects #project-box .project-card .close:hover {
+  color: #c5390a;
+  text-decoration: none;
+  cursor: pointer;
 }
 #content-container #main-container-projects #project-box h2 {
   font-family: "Urbanist", sans-serif;
