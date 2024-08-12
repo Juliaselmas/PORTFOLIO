@@ -598,7 +598,7 @@ body {
 
                 }
 
-                #modal {
+                .modal {
                     display: none;
                     position: fixed;
                     z-index: 15; 
@@ -622,7 +622,7 @@ body {
                     flex-direction: column;
 
                     #link-container-projects {
-                        padding: 0px;
+                        padding: 10px;
                         margin: 25px;
                         display: flex;
                         justify-content: center;
@@ -639,11 +639,19 @@ body {
                             
                         }
 
+                        a:hover {
+                            font-size: 2rem;
+                        }
+
                         img {
                             padding: 0px;
                             margin: 0px;
                             width: 2rem;
                             
+                        }
+
+                        img:hover {
+                            width: 2.2rem;
                         }
 
                     }
@@ -657,9 +665,9 @@ body {
                         justify-content: space-between;
 
                         img {
-                            height: 250px;
+                            
                             width: 30%;
-                            margin: 10px;
+                            margin: 10px 5px;
     
                         }
 

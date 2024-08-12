@@ -465,7 +465,7 @@ body {
   font-size: 0.8rem;
   margin: 10px 25px;
 }
-#content-container #main-container-projects #project-box .project-card #modal {
+#content-container #main-container-projects #project-box .project-card .modal {
   display: none;
   position: fixed;
   z-index: 15;
@@ -488,7 +488,7 @@ body {
   flex-direction: column;
 }
 #content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects {
-  padding: 0px;
+  padding: 10px;
   margin: 25px;
   display: flex;
   justify-content: center;
@@ -502,10 +502,16 @@ body {
   margin: 10px 0px 0px 20px;
   padding: 0px;
 }
+#content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects a:hover {
+  font-size: 2rem;
+}
 #content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects img {
   padding: 0px;
   margin: 0px;
   width: 2rem;
+}
+#content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects img:hover {
+  width: 2.2rem;
 }
 #content-container #main-container-projects #project-box .project-card .modal-content #image-container-projects {
   margin: 10px;
@@ -513,9 +519,8 @@ body {
   justify-content: space-between;
 }
 #content-container #main-container-projects #project-box .project-card .modal-content #image-container-projects img {
-  height: 250px;
   width: 30%;
-  margin: 10px;
+  margin: 10px 5px;
 }
 #content-container #main-container-projects #project-box .project-card .close {
   color: #aaaaaa;
