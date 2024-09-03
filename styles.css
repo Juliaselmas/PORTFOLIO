@@ -123,45 +123,6 @@ body {
   text-decoration: none;
   color: #323232;
 }
-#content-container #side-container-contact {
-  border-radius: 10px;
-  padding: 50px 30px;
-  max-width: 15%;
-  display: flex;
-  flex-direction: column;
-}
-#content-container #side-container-contact h1 {
-  color: #c5390a;
-  justify-content: flex-end;
-  align-self: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 8rem;
-  line-height: 0.65;
-  margin: 0px;
-}
-#content-container #side-container-contact h2 {
-  color: #c5390a;
-  justify-content: flex-start;
-  align-self: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 3.5rem;
-  margin: 0px;
-}
-#content-container #side-container-contact #text-link-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-#content-container #side-container-contact #text-link-container #text-box {
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-#content-container #side-container-contact #text-link-container #text-box p {
-  align-self: center;
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  margin: 0px;
-}
 #content-container #side-container-aboutme {
   padding: 40px 30px;
   max-width: 30%;
@@ -322,42 +283,6 @@ body {
 #content-container #main-container .project-card .text-container select {
   padding: 5px;
 }
-#content-container #main-container-contact {
-  padding: 20px 10px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-#content-container #main-container-contact #text-box {
-  background-color: beige;
-  margin: 20px 10px;
-}
-#content-container #main-container-contact #text-box p {
-  justify-content: flex-start;
-  align-self: flex-start;
-  font-family: "Urbanist", sans-serif;
-  font-size: 1.5rem;
-  margin: 0px;
-}
-#content-container #main-container-contact #link-section {
-  background-color: #edad93;
-  margin: 250px 0px 30px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-#content-container #main-container-contact #link-section a {
-  margin: 30px 10px;
-  font-family: "Urbanist", sans-serif;
-  font-size: 2rem;
-  text-decoration: none;
-  color: #323232;
-}
-#content-container #main-container-contact #link-section a:hover {
-  font-weight: bold;
-}
 #content-container #main-container-aboutme {
   padding: 40px 20px 40px 30px;
   max-width: 60%;
@@ -415,145 +340,64 @@ body {
   flex-wrap: nowrap;
 }
 #content-container #main-container-projects #project-box {
-  margin: 30px 10px 10px 10px;
-  padding: 65px 10px 0px 10px;
-  max-width: 65%;
-  max-height: 95%;
-  overflow: scroll;
+  margin: 20px 0px 10px 0px;
+  padding: 60px 10px 0px 0px;
+  max-width: 70%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
 }
 #content-container #main-container-projects #project-box .project-card {
   display: flex;
   flex-direction: row;
-  max-width: 95%;
-  margin: 0px 15px 15px 15px;
+  max-width: 30%;
+  margin: 10px;
+  /*
+  .project-card-textbox {
+
+      max-width: 45%;
+
+      h3 {
+          font-family: $fontHeadlines;
+          margin: 20px 20px 10px 25px;
+          font-size: 1.5rem;
+      }
+
+      p {
+          font-family: $fontHeadlines;
+          font-size:0.8rem;
+          margin: 10px 25px;
+      }
+
+  }*/
 }
 #content-container #main-container-projects #project-box .project-card img {
   border-radius: 2px;
-  width: 35%;
-  margin: 0px;
-}
-#content-container #main-container-projects #project-box .project-card .modal-button {
-  background-color: #fceee5;
-  font-family: "Urbanist", sans-serif;
-  font-size: 0.8rem;
-  color: #232323;
-  border-radius: 5px;
-  border: 1px solid #232323;
-  margin: 10px 25px;
-  padding: 5px;
-}
-#content-container #main-container-projects #project-box .project-card .modal-button:hover {
-  background-color: #c5390a;
-  color: white;
-  border: 1px solid #c5390a;
-}
-#content-container #main-container-projects #project-box .project-card .project-card-textbox {
-  max-width: 45%;
-}
-#content-container #main-container-projects #project-box .project-card .project-card-textbox h3 {
-  font-family: "Urbanist", sans-serif;
-  margin: 20px 20px 10px 25px;
-  font-size: 1.5rem;
-}
-#content-container #main-container-projects #project-box .project-card .project-card-textbox p {
-  font-family: "Urbanist", sans-serif;
-  font-size: 0.8rem;
-  margin: 10px 25px;
-}
-#content-container #main-container-projects #project-box .project-card .modal {
-  display: none;
-  position: fixed;
-  z-index: 15;
-  padding-top: 10rem;
-  left: 0;
-  top: 0;
   width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
 }
-#content-container #main-container-projects #project-box .project-card .modal-content {
-  background-color: #fceee5;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #a72f2f;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-}
-#content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects {
-  padding: 10px;
-  margin: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects a {
-  font-family: "Urbanist", sans-serif;
-  text-decoration: none;
-  color: #232323;
-  font-size: 1.8rem;
-  margin: 10px 0px 0px 20px;
-  padding: 0px;
-}
-#content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects a:hover {
-  font-size: 2rem;
-}
-#content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects img {
-  padding: 0px;
-  margin: 0px;
-  width: 2rem;
-}
-#content-container #main-container-projects #project-box .project-card .modal-content #link-container-projects img:hover {
-  width: 2.2rem;
-}
-#content-container #main-container-projects #project-box .project-card .modal-content #image-container-projects {
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-#content-container #main-container-projects #project-box .project-card .modal-content #image-container-projects img {
-  width: 30%;
-  margin: 10px 5px;
-}
-#content-container #main-container-projects #project-box .project-card .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 14px;
-  font-weight: bold;
-}
-#content-container #main-container-projects #project-box .project-card .close:hover, #content-container #main-container-projects #project-box .project-card .close:hover {
-  color: #c5390a;
-  text-decoration: none;
-  cursor: pointer;
-}
-#content-container #main-container-projects #project-box h2 {
+#content-container #main-container-projects h2 {
   font-family: "Urbanist", sans-serif;
   font-size: 2rem;
   margin: 10px 0px;
   width: 100%;
 }
-#content-container #main-container-projects #link-section {
+#content-container #link-section {
   margin: 250px 0px 30px 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
 }
-#content-container #main-container-projects #link-section a {
+#content-container #link-section a {
   margin: 30px 10px;
   font-family: "Urbanist", sans-serif;
   font-size: 2rem;
   text-decoration: none;
   color: #323232;
 }
-#content-container #main-container-projects #link-section a:hover {
+#content-container #link-section a:hover {
   font-weight: bold;
 }
 

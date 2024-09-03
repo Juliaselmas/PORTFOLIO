@@ -167,57 +167,6 @@ body {
  
     }
 
-    #side-container-contact {
-        //background-color: bisque;
-        border-radius: 10px;
-        padding: 50px 30px;
-        max-width: 15%;
-        display: flex;
-        flex-direction: column;
-
-        h1 {
-            color: $colorHeadLine;
-            justify-content: flex-end;
-            align-self: center;
-            font-family: $fontHeader;
-            font-size: 8rem;
-            line-height: 0.65;
-            margin: 0px;   
-        }
-
-        h2 {
-            color: $colorHeadLine;
-            justify-content: flex-start;
-            align-self: center;
-            font-family: $fontHeader;
-            font-size: 3.5rem;
-            margin: 0px;            
-        }
-
-        #text-link-container {
-            display:flex;
-            justify-content: space-between;
-            align-items: flex-start;
-
-            #text-box {
-                justify-content: flex-end;
-                align-items: flex-end;
-    
-                p {
-                    
-                    align-self: center;
-                    font-family: $fontHeadlines;
-                    font-size: 20px;
-                    margin: 0px;
-                }
-
-            }
-
-
-        }
- 
-    }
-
     #side-container-aboutme {
         padding: 40px 30px;
         max-width: 30%;
@@ -424,53 +373,6 @@ body {
         }
     }
 
-    #main-container-contact {
-       
-        padding: 20px 10px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        #text-box {
-           background-color: beige;
-            margin: 20px 10px;
-            
-
-            p {
-                justify-content: flex-start;
-                align-self:flex-start;
-                font-family: $fontHeadlines;
-                font-size:1.5rem;
-                margin: 0px;
-    
-            }
-
-        }
-
-        #link-section {
-            background-color: #edad93;
-            margin: 250px 0px 30px 0px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-end;
-
-            a {
-                margin: 30px 10px;
-                font-family: $fontLinks;
-                font-size: 2rem;
-                text-decoration: none;
-                color: #323232;
-            }
-
-            a:hover {
-                font-weight: bold;
-            }
-        }
-
-    }
-
     #main-container-aboutme {
         padding: 40px 20px 40px 30px;
         max-width: 60%;
@@ -529,8 +431,8 @@ body {
 
     }
 
-
     #main-container-projects {
+        //background-color: #a72f2f;
         padding: 40px 20px 40px 30px;
         max-width: 70%;
         max-height: 80vh;
@@ -539,47 +441,31 @@ body {
         flex-wrap: nowrap;
 
         #project-box {
-            margin: 30px 10px 10px 10px;
-            padding: 65px 10px 0px 10px;
-            max-width: 65%;
-            max-height: 95%;
-            overflow: scroll;
+            //background-color: #ffe96b;
+            margin: 20px 0px 10px 0px;
+            padding: 60px 10px 0px 0px;
+            max-width: 70%;
+            //max-height: 95%;
+            //overflow: scroll;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            align-items: flex-start;
+            align-items: center;
             justify-content: flex-start;
 
             .project-card {
                 display: flex;
                 flex-direction: row;
-                max-width: 95%;
-                margin: 0px 15px 15px 15px;
+                max-width: 30%;
+                margin: 10px;
 
                 img {
                     border-radius: 2px;
-                    width: 35%;
-                    margin:0px;
+                    width: 100%;
+                   
                 }
 
-                .modal-button {
-                    background-color: $colorBackground;
-                    font-family: $fontLinks;
-                    font-size: 0.8rem;
-                    color: $colorText;
-                    border-radius: 5px;
-                    border: 1px solid #232323;
-                    margin: 10px 25px;
-                    padding: 5px;
-                    
-                }
-
-                .modal-button:hover {
-                    background-color: $colorBtn;
-                    color: white;
-                    border: 1px solid $colorBtn;
-                }
-
+                /*
                 .project-card-textbox {
 
                     max-width: 45%;
@@ -596,101 +482,11 @@ body {
                         margin: 10px 25px;
                     }
 
-                }
-
-                .modal {
-                    display: none;
-                    position: fixed;
-                    z-index: 15; 
-                    padding-top: 10rem;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    overflow: auto;
-                    background-color: rgb(0,0,0);
-                    background-color: rgba(0,0,0,0.4);
-                }
-
-                .modal-content {
-                    background-color: $colorBackground;
-                    margin: auto;
-                    padding: 20px;
-                    border: 1px solid #a72f2f;
-                    width: 60%;
-                    display: flex;
-                    flex-direction: column;
-
-                    #link-container-projects {
-                        padding: 10px;
-                        margin: 25px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        
-
-                        a {
-                            font-family: $fontLinks;
-                            text-decoration: none;
-                            color: $colorText;
-                            font-size: 1.8rem;
-                            margin: 10px 0px 0px 20px;
-                            padding: 0px;
-                            
-                        }
-
-                        a:hover {
-                            font-size: 2rem;
-                        }
-
-                        img {
-                            padding: 0px;
-                            margin: 0px;
-                            width: 2rem;
-                            
-                        }
-
-                        img:hover {
-                            width: 2.2rem;
-                        }
-
-                    }
-
-        
-                    #image-container-projects {
-
-                        margin: 10px;
-
-                        display: flex;
-                        justify-content: space-between;
-
-                        img {
-                            
-                            width: 30%;
-                            margin: 10px 5px;
-    
-                        }
-
-                    }
-
-                }
-
-                .close {
-                    color: #aaaaaa;
-                    float: right;
-                    font-size: $fontSizeText;
-                    font-weight: bold;
-                }
-
-                .close:hover, .close:hover {
-
-                    color: $colorBtn;
-                    text-decoration: none;
-                    cursor: pointer;
-
-                }
+                }*/
 
             }
+
+        }
 
             
             
@@ -707,6 +503,7 @@ body {
          }
 
          #link-section {
+            
             margin: 250px 0px 30px 0px;
             display: flex;
             flex-direction: column;
@@ -726,8 +523,6 @@ body {
             }
         }
     }
-}
-
 
 #footer {
    background-color: rgba(255, 255, 255, 0.3);
