@@ -31,58 +31,59 @@ body {
   box-sizing: border-box;
 }
 
-#header {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 0px 0px 20px 0px;
+#top-container {
   width: 100%;
-  position: sticky;
-  top: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+}
+#top-container #link-section {
+  position: fixed;
+  width: 95%;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: flex-end;
 }
-#header h1 {
-  margin: 20px 0px 0px 0px;
-  color: #323232;
-  font-family: "Oswald", sans-serif;
-  font-size: 90px;
-}
-#header a {
-  margin: 0px 0px 0px 10px;
+#top-container #link-section a {
+  margin: 10px;
   font-family: "Urbanist", sans-serif;
+  font-size: 2rem;
   text-decoration: none;
-  color: #a72f2f;
+  color: #323232;
 }
-#header a:hover {
+#top-container #link-section a:hover {
   font-weight: bold;
 }
 
 #content-container {
-  padding: 30px 0px;
   width: 100%;
   display: flex;
   flex: 1;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#content-container #side-container {
+#content-container #main-container-homepage {
   border-radius: 10px;
-  padding: 50px 30px;
-  max-width: 30%;
+  padding-top: 10%;
+  width: 40%;
+  height: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
-#content-container #side-container h1 {
+#content-container #main-container-homepage h1 {
   color: #c5390a;
   justify-content: flex-end;
   align-self: center;
   font-family: "Oswald", sans-serif;
   font-size: 15rem;
-  line-height: 0.65;
+  line-height: 0.7;
   margin: 0px;
 }
-#content-container #side-container h2 {
+#content-container #main-container-homepage h2 {
   color: #c5390a;
   justify-content: flex-start;
   align-self: center;
@@ -90,315 +91,220 @@ body {
   font-size: 6.5rem;
   margin: 0px;
 }
-#content-container #side-container #text-link-container {
+#content-container #main-container-homepage #text-link-container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
-#content-container #side-container #text-link-container #text-box {
+#content-container #main-container-homepage #text-link-container #text-box {
   justify-content: flex-end;
   align-items: flex-end;
 }
-#content-container #side-container #text-link-container #text-box p {
+#content-container #main-container-homepage #text-link-container #text-box p {
   color: #232323;
   align-self: center;
   font-family: "Urbanist", sans-serif;
   font-size: 20px;
-  margin: 0px;
+  margin: 0px 2px;
 }
-#content-container #side-container #text-link-container #colour-container {
-  background-color: #ffe96b;
-  width: 80%;
-  height: 15px;
-  margin: 0px;
-  position: fixed;
-  z-index: 10;
-}
-#content-container #side-container #text-link-container #side-container-links {
-  z-index: 11;
-}
-#content-container #side-container #text-link-container #side-container-links a {
-  margin: 0px 10px;
+#content-container #main-container-homepage #text-link-container #main-container-links a {
+  margin: 0px 10px 0px 2px;
   font-family: "Urbanist", sans-serif;
   text-decoration: none;
   color: #323232;
 }
-#content-container #side-container-aboutme {
-  padding: 40px 30px;
-  max-width: 30%;
+#content-container #main-container-homepage #text-link-container #main-container-links a img {
+  height: 2rem;
+}
+
+#content-container-aboutme {
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#content-container-aboutme #side-container-aboutme {
+  padding-top: 35px;
+  padding-left: 60px;
+  width: 30%;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
-#content-container #side-container-aboutme h1 {
+#content-container-aboutme #side-container-aboutme h1 {
   color: #c5390a;
   justify-content: flex-end;
-  align-self: flex-start;
+  align-self: flex-end;
   font-family: "Oswald", sans-serif;
   font-size: 8rem;
   line-height: 0.65;
   margin: 0px;
   z-index: 11;
 }
-#content-container #side-container-aboutme h2 {
+#content-container-aboutme #side-container-aboutme h2 {
   color: #c5390a;
   justify-content: flex-start;
-  align-self: flex-start;
+  align-self: flex-end;
   font-family: "Oswald", sans-serif;
   font-size: 3.5rem;
   margin: 0px;
   z-index: 11;
 }
-#content-container #side-container-aboutme img {
-  max-height: 81vh;
+#content-container-aboutme #side-container-aboutme img {
+  max-height: 80vh;
   margin: 20px 15px 0px 20px;
   position: fixed;
-  bottom: 0;
+  bottom: -2%;
+  left: 4%;
   z-index: 10;
 }
-#content-container #side-container-aboutme #text-link-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-#content-container #side-container-aboutme #text-link-container #text-box {
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-#content-container #side-container-aboutme #text-link-container #text-box p {
-  align-self: center;
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  margin: 0px;
-}
-#content-container #side-container-projects {
-  padding: 40px 30px;
-  max-width: 30%;
-  display: flex;
-  flex-direction: column;
-}
-#content-container #side-container-projects h1 {
-  color: #c5390a;
-  justify-content: flex-end;
-  align-self: flex-start;
-  font-family: "Oswald", sans-serif;
-  font-size: 8rem;
-  line-height: 0.65;
-  margin: 0px;
-  z-index: 11;
-}
-#content-container #side-container-projects h2 {
-  color: #c5390a;
-  justify-content: flex-start;
-  align-self: flex-start;
-  font-family: "Oswald", sans-serif;
-  font-size: 3.5rem;
-  margin: 0px;
-  z-index: 11;
-}
-#content-container #side-container-projects #text-box {
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-#content-container #side-container-projects #text-box p {
-  color: #232323;
-  align-self: center;
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  margin: 0px;
-}
-#content-container #main-container {
-  padding: 20px 10px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-#content-container #main-container #text-box {
-  margin: 20px 10px;
-}
-#content-container #main-container #text-box p {
-  justify-content: flex-start;
-  align-self: flex-start;
-  font-family: "Urbanist", sans-serif;
-  font-size: 1.5rem;
-  margin: 0px;
-}
-#content-container #main-container #link-section {
-  margin: 250px 0px 30px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-#content-container #main-container #link-section a {
-  margin: 30px 10px;
-  font-family: "Urbanist", sans-serif;
-  font-size: 2rem;
-  text-decoration: none;
-  color: #323232;
-}
-#content-container #main-container #link-section a:hover {
-  font-weight: bold;
-}
-#content-container #main-container #more-projects-link {
-  margin: 20px 10px;
-  font-family: "Urbanist", sans-serif;
-  text-decoration: none;
-  flex-basis: 80%;
-  text-align: right;
-}
-#content-container #main-container .project-card {
-  border: 1px solid black;
-  border-radius: 8px;
-  max-width: 20%;
-  padding: 10px;
-  margin: 10px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#content-container #main-container .project-card img {
-  max-width: 100%;
-  filter: grayscale(100%);
-}
-#content-container #main-container .project-card img:hover {
-  max-width: 100%;
-  filter: none;
-}
-#content-container #main-container .project-card .text-container {
-  padding: 5px 10px 20px 10px;
-}
-#content-container #main-container .project-card .text-container p {
-  margin: 20px 0px 40px 0px;
-  font-size: 14px;
-  font-family: "Urbanist", sans-serif;
-}
-#content-container #main-container .project-card .text-container a {
-  text-align: right;
-  margin: 20px 10px;
-  font-size: 16px;
-  font-family: "Urbanist", sans-serif;
-  text-decoration: none;
-}
-#content-container #main-container .project-card .text-container select {
-  padding: 5px;
-}
-#content-container #main-container-aboutme {
+#content-container-aboutme #main-container-aboutme {
   padding: 40px 20px 40px 30px;
   max-width: 60%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-self: flex-end;
+  align-items: flex-end;
 }
-#content-container #main-container-aboutme #text-box {
-  margin: 15px;
+#content-container-aboutme #main-container-aboutme #text-box {
+  padding-top: 200px;
+  margin: 20px;
   max-width: 65%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
 }
-#content-container #main-container-aboutme #text-box h2 {
+#content-container-aboutme #main-container-aboutme #text-box h2 {
   font-family: "Urbanist", sans-serif;
   font-size: 2rem;
   margin: 10px 0px;
 }
-#content-container #main-container-aboutme #text-box p {
+#content-container-aboutme #main-container-aboutme #text-box p {
   font-family: "Urbanist", sans-serif;
   font-size: 1rem;
   margin: 0px;
 }
-#content-container #main-container-aboutme img {
+#content-container-aboutme #main-container-aboutme img {
   max-height: 90vh;
   margin: 20px 15px 0px 20px;
   position: fixed;
   bottom: 0;
 }
-#content-container #main-container-aboutme #link-section {
+#content-container-aboutme #main-container-aboutme #link-section {
   margin: 250px 0px 30px 0px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
 }
-#content-container #main-container-aboutme #link-section a {
+#content-container-aboutme #main-container-aboutme #link-section a {
   margin: 30px 10px;
   font-family: "Urbanist", sans-serif;
   font-size: 2rem;
   text-decoration: none;
   color: #323232;
 }
-#content-container #main-container-aboutme #link-section a:hover {
+#content-container-aboutme #main-container-aboutme #link-section a:hover {
   font-weight: bold;
 }
-#content-container #main-container-projects {
-  padding: 40px 20px 40px 30px;
-  max-width: 70%;
-  max-height: 80vh;
+
+#content-container-projects {
+  padding-top: 30px;
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-#content-container #main-container-projects #project-box {
+#content-container-projects #side-container-projects {
+  padding-top: 35px;
+  padding-left: 60px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#content-container-projects #side-container-projects h1 {
+  color: #c5390a;
+  justify-content: flex-end;
+  align-self: flex-end;
+  font-family: "Oswald", sans-serif;
+  font-size: 8rem;
+  line-height: 0.65;
+  margin: 0px;
+  z-index: 11;
+}
+#content-container-projects #side-container-projects h2 {
+  color: #c5390a;
+  justify-content: flex-start;
+  align-self: flex-end;
+  font-family: "Oswald", sans-serif;
+  font-size: 3.5rem;
+  margin: 0px;
+  z-index: 11;
+}
+#content-container-projects #side-container-projects #project-info-container {
+  padding-top: 100px;
+  max-width: 75%;
+  color: #232323;
+  font-family: "Urbanist", sans-serif;
+  font-size: 14px;
+  text-align: end;
+}
+#content-container-projects #side-container-projects #project-info-container #link-container-projects {
+  text-decoration: none;
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#content-container-projects #side-container-projects #project-info-container #link-container-projects a {
+  margin: 0px 10px 0px 2px;
+  font-family: "Urbanist", sans-serif;
+  text-decoration: none;
+  color: #323232;
+}
+#content-container-projects #side-container-projects #project-info-container #link-container-projects a img {
+  height: 1.5rem;
+}
+#content-container-projects #side-container-projects #project-info-container #link-container-projects a i {
+  font-size: 1.2rem;
+}
+#content-container-projects #main-container-projects {
+  padding: 40px 20px 40px 30px;
+  max-width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-end;
+  align-items: flex-end;
+}
+#content-container-projects #main-container-projects #project-box {
   margin: 20px 0px 10px 0px;
-  padding: 60px 10px 0px 0px;
-  max-width: 70%;
+  padding-top: 130px;
+  padding-left: 20px;
+  max-width: 90%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-start;
 }
-#content-container #main-container-projects #project-box .project-card {
+#content-container-projects #main-container-projects #project-box .project-card {
   display: flex;
   flex-direction: row;
   max-width: 30%;
   margin: 10px;
-  /*
-  .project-card-textbox {
-
-      max-width: 45%;
-
-      h3 {
-          font-family: $fontHeadlines;
-          margin: 20px 20px 10px 25px;
-          font-size: 1.5rem;
-      }
-
-      p {
-          font-family: $fontHeadlines;
-          font-size:0.8rem;
-          margin: 10px 25px;
-      }
-
-  }*/
 }
-#content-container #main-container-projects #project-box .project-card img {
+#content-container-projects #main-container-projects #project-box .project-card img {
   border-radius: 2px;
   width: 100%;
-}
-#content-container #main-container-projects h2 {
-  font-family: "Urbanist", sans-serif;
-  font-size: 2rem;
-  margin: 10px 0px;
-  width: 100%;
-}
-#content-container #link-section {
-  margin: 250px 0px 30px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-#content-container #link-section a {
-  margin: 30px 10px;
-  font-family: "Urbanist", sans-serif;
-  font-size: 2rem;
-  text-decoration: none;
-  color: #323232;
-}
-#content-container #link-section a:hover {
-  font-weight: bold;
 }
 
 #footer {
