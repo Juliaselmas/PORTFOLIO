@@ -182,7 +182,7 @@ body {
   background-color: #fceee5;
   border: 1px solid #232323;
   border-bottom: none;
-  padding: 6px 8px;
+  padding: 6px 16px;
   margin-right: 5px;
   border-radius: 4px 4px 0px 0px;
   font-size: 14px;
@@ -209,16 +209,11 @@ body {
 #content-container-aboutme #main-container-aboutme #info-container #contact-box p {
   margin-top: 8px;
 }
-#content-container-aboutme #main-container-aboutme #info-container #text-box {
+#content-container-aboutme #main-container-aboutme #info-container #text-box, #content-container-aboutme #main-container-aboutme #info-container #competence-box {
+  padding-top: 10px;
   width: 45vw;
 }
-#content-container-aboutme #main-container-aboutme #info-container #text-box p {
-  margin-top: 8px;
-}
-#content-container-aboutme #main-container-aboutme #info-container #competence-box {
-  width: 45vw;
-}
-#content-container-aboutme #main-container-aboutme #info-container #competence-box p {
+#content-container-aboutme #main-container-aboutme #info-container #text-box p, #content-container-aboutme #main-container-aboutme #info-container #competence-box p {
   margin-top: 8px;
 }
 
@@ -240,25 +235,6 @@ body {
   flex-direction: column;
   align-items: flex-end;
 }
-#content-container-projects #side-container-projects h1 {
-  color: #c5390a;
-  justify-content: flex-end;
-  align-self: flex-end;
-  font-family: "Oswald", sans-serif;
-  font-size: 8rem;
-  line-height: 0.65;
-  margin: 0px;
-  z-index: 11;
-}
-#content-container-projects #side-container-projects h2 {
-  color: #c5390a;
-  justify-content: flex-start;
-  align-self: flex-end;
-  font-family: "Oswald", sans-serif;
-  font-size: 3.5rem;
-  margin: 0px;
-  z-index: 11;
-}
 #content-container-projects #side-container-projects #project-info-container {
   padding-top: 100px;
   max-width: 75%;
@@ -266,6 +242,16 @@ body {
   font-family: "Urbanist", sans-serif;
   font-size: 14px;
   text-align: end;
+}
+#content-container-projects #side-container-projects #project-info-container h3 {
+  font-size: 20px;
+}
+#content-container-projects #side-container-projects #project-info-container h4 {
+  margin: 50px 0px 0px 0px;
+  font-size: 14px;
+}
+#content-container-projects #side-container-projects #project-info-container p {
+  line-height: 1.5;
 }
 #content-container-projects #side-container-projects #project-info-container #link-container-projects {
   text-decoration: none;

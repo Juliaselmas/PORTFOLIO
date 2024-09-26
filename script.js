@@ -11,6 +11,7 @@ let projectCards = document.querySelectorAll(
 );
 let projectTitle = document.getElementById("project-title");
 let projectDescription = document.getElementById("project-description");
+let projectKeyWords = document.getElementById("project-keywords");
 let linkContainer = document.getElementById("link-container-projects");
 
 textBox.style.display = "block";
@@ -38,24 +39,41 @@ showTextBtn.addEventListener("click", showText);
 let projects = [
   {
     title: "Pokemon Application",
-    description: "This is a Pokemon App built using HTML, CSS, and JavaScript.",
+    description:
+      "This is a Pokemon App built using HTML, CSS, and JavaScript. A school project focusing on working with API's and how to fetch it's data.",
+    keywords: " API • Javascript • HTML • CSS",
     liveLink: "https://juliaselmas.github.io/POKEMON-APPLICATION/",
     repoLink: "https://github.com/Juliaselmas/POKEMON-APPLICATION",
     imageAlt: "Project Preview-PokemonApp",
   },
   {
     title: "Productivity App",
-    description: "A productivity app to manage your daily tasks efficiently.",
+    description:
+      "A productivity app to manage your daily tasks and habits. A project made in collaboration with Nina Norrby and Sofia Ledin with focus on agile methodology. Build with Javascript, HTML & CSS.",
+    keywords:
+      "Agile Methodology • Collaboration • Time management • Local Storage • Javascript • HTML, CSS",
     liveLink: "https://example.com/productivity-app",
     repoLink: "https://github.com/Juliaselmas/Productivity-App",
     imageAlt: "Project Preview-ProductivityApp",
   },
   {
-    title: "Quiz Application",
-    description: "A fun quiz app built with JavaScript and Bootstrap.",
-    liveLink: "https://example.com/quiz-app",
-    repoLink: "https://github.com/Juliaselmas/Quiz-App",
+    title: "It's quiz time!",
+    description:
+      "A fun quiz app built with JavaScript, HTML & CSS. My first project in Javascript from my first year of my education.",
+    keywords: "Javascript • HTML • CSS",
+    liveLink: "https://juliaselmas.github.io/quiz/",
+    repoLink: "https://github.com/Juliaselmas/QUIZ",
     imageAlt: "Project Preview-Quiz",
+  },
+  {
+    title: "Inventory Application",
+    description:
+      "An introduction to using Javascript in backend. Creating API's for item inventory and users by CRUD.",
+    keywords:
+      "Backend • CRUD • Next.js • API • Docker • Postman • Javascript • HTML • CSS",
+    liveLink: "/.",
+    repoLink: "https://github.com/Juliaselmas/js-backend",
+    imageAlt: "Project Preview-Inventory",
   },
 ];
 
@@ -73,6 +91,7 @@ function activateProject(index) {
   let activeProject = projects[index];
   projectTitle.innerText = activeProject.title;
   projectDescription.innerText = activeProject.description;
+  projectKeyWords.innerText = activeProject.keywords;
 
   linkContainer.innerHTML = `
   <a href="${activeProject.liveLink}" target="_blank"><i class="fa-solid fa-desktop"></i></a>
