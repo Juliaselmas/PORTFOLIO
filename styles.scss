@@ -11,7 +11,7 @@ $fontSizeTextFooter: 14px;
 $fontsizeLinks: 16px;
 
 $colorHeadLine: #c5390a;
-$colorBtn: $colorHeadLine;
+$colorBtn: #232323;
 $colorText: #232323;
 $colorBackground: #fceee5;
 
@@ -167,30 +167,31 @@ body {
 #content-container-aboutme {
         padding-top: 30px;
         width: 100%;
+        margin-top: 20px;
         height: 90vh;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;  
+        justify-content: flex-end;
+        align-items: center;  
     
         #side-container-aboutme {
-            //background-color: #c5390a;
             //padding-top:35px;
             margin-top: 20px;
             padding-left: 60px;
             width: 30%;
             display: flex;
             flex-direction: column;
-            align-items: flex-end;  
+            align-items: center;  
         
             
             img {
-                max-height: 75vh;
+                max-height: 65vh;
                 margin: 10px 15px 0px 20px;
-               position: sticky;
-               // bottom: -2%;
+                position: sticky;
+                top: 0;
+                border-radius: 8%;
                 left: 100;
-                //z-index: 10;
+                
             }
          
         }
@@ -205,8 +206,8 @@ body {
             align-items: center;
                 
         
-            #text-box {    
-                padding-top: 200px;
+            #info-container {    
+                padding-top: 100px;
                 margin: 20px;
                 max-width: 65%;
                 display: flex;
@@ -219,19 +220,61 @@ body {
                     font-size:2rem;
                     margin: 10px 0px;
                 }
-                
+
+                #buttons-box {
+                    margin-top: 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    button {
+                        background-color: $colorBackground;
+                        border: 1px solid $colorBtn;
+                        border-bottom: 1px solid $colorBackground;
+                        padding: 6px 8px;
+                        margin-right: 5px;
+                        border-radius: 4px 4px 0px 0px;
+                        z-index: 2;
+                    }
+    
+                }
+
+            
                 p {
                     font-family: $fontHeadlines;
                     font-size:1rem;
-                    margin: 0px;
+                    margin: 0;
+                }
+
+                #contact-box {
+                    margin-bottom: 10px;
+
+                    p {
+                        margin-top: 8px;
+                       }
+                }
+                
+
+                #text-box {
+
+                    border-top: 1px solid $colorBtn;
+                    z-index: 10;
+
+                    p {
+                        margin-top: 8px;
+                       }
+
+                }
+
+                #competence-box {
+                    p {
+                        margin-top: 8px;
+                       }
                 }
         
             }
         
-            img {
-                max-height: 90vh;
-                margin: 20px 15px 0px 20px;
-            }
         
         }
     }  
@@ -451,7 +494,7 @@ body {
                     margin: 10px;
 
                     img {
-                        border-radius: 2px;
+                        border-radius: 8px;
                         width: 100%;
                    
                     }

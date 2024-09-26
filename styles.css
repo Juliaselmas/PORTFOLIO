@@ -122,11 +122,12 @@ body {
 #content-container-aboutme {
   padding-top: 30px;
   width: 100%;
+  margin-top: 20px;
   height: 90vh;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items: center;
 }
 #content-container-aboutme #side-container-aboutme {
   margin-top: 20px;
@@ -134,12 +135,14 @@ body {
   width: 30%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 #content-container-aboutme #side-container-aboutme img {
-  max-height: 75vh;
+  max-height: 65vh;
   margin: 10px 15px 0px 20px;
   position: sticky;
+  top: 0;
+  border-radius: 8%;
   left: 100;
 }
 #content-container-aboutme #main-container-aboutme {
@@ -151,8 +154,8 @@ body {
   align-self: center;
   align-items: center;
 }
-#content-container-aboutme #main-container-aboutme #text-box {
-  padding-top: 200px;
+#content-container-aboutme #main-container-aboutme #info-container {
+  padding-top: 100px;
   margin: 20px;
   max-width: 65%;
   display: flex;
@@ -160,19 +163,46 @@ body {
   align-items: flex-start;
   justify-content: flex-end;
 }
-#content-container-aboutme #main-container-aboutme #text-box h2 {
+#content-container-aboutme #main-container-aboutme #info-container h2 {
   font-family: "Urbanist", sans-serif;
   font-size: 2rem;
   margin: 10px 0px;
 }
-#content-container-aboutme #main-container-aboutme #text-box p {
+#content-container-aboutme #main-container-aboutme #info-container #buttons-box {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#content-container-aboutme #main-container-aboutme #info-container #buttons-box button {
+  background-color: #fceee5;
+  border: 1px solid #232323;
+  border-bottom: 1px solid #fceee5;
+  padding: 6px 8px;
+  margin-right: 5px;
+  border-radius: 4px 4px 0px 0px;
+  z-index: 2;
+}
+#content-container-aboutme #main-container-aboutme #info-container p {
   font-family: "Urbanist", sans-serif;
   font-size: 1rem;
-  margin: 0px;
+  margin: 0;
 }
-#content-container-aboutme #main-container-aboutme img {
-  max-height: 90vh;
-  margin: 20px 15px 0px 20px;
+#content-container-aboutme #main-container-aboutme #info-container #contact-box {
+  margin-bottom: 10px;
+}
+#content-container-aboutme #main-container-aboutme #info-container #contact-box p {
+  margin-top: 8px;
+}
+#content-container-aboutme #main-container-aboutme #info-container #text-box {
+  border-top: 1px solid #232323;
+  z-index: 10;
+}
+#content-container-aboutme #main-container-aboutme #info-container #text-box p {
+  margin-top: 8px;
+}
+#content-container-aboutme #main-container-aboutme #info-container #competence-box p {
+  margin-top: 8px;
 }
 
 /*
@@ -379,7 +409,7 @@ body {
   margin: 10px;
 }
 #content-container-projects #main-container-projects #project-box .project-card img {
-  border-radius: 2px;
+  border-radius: 8px;
   width: 100%;
 }
 
