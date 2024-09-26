@@ -24,12 +24,15 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0px 30px;
   background-color: #fceee5;
   min-height: 100vh;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 #top-container {
@@ -98,11 +101,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-#content-container-home #main-container-homepage #text-link-container #text-box {
+#content-container-home #main-container-homepage #text-link-container #text-box-homepage {
   justify-content: flex-end;
   align-items: flex-end;
 }
-#content-container-home #main-container-homepage #text-link-container #text-box p {
+#content-container-home #main-container-homepage #text-link-container #text-box-homepage p {
   color: #232323;
   align-self: center;
   font-family: "Urbanist", sans-serif;
@@ -126,7 +129,7 @@ body {
   height: 90vh;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 #content-container-aboutme #side-container-aboutme {
@@ -157,11 +160,12 @@ body {
 #content-container-aboutme #main-container-aboutme #info-container {
   padding-top: 100px;
   margin: 20px;
-  max-width: 65%;
+  width: 60vw;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 #content-container-aboutme #main-container-aboutme #info-container h2 {
   font-family: "Urbanist", sans-serif;
@@ -177,11 +181,22 @@ body {
 #content-container-aboutme #main-container-aboutme #info-container #buttons-box button {
   background-color: #fceee5;
   border: 1px solid #232323;
-  border-bottom: 1px solid #fceee5;
+  border-bottom: none;
   padding: 6px 8px;
   margin-right: 5px;
   border-radius: 4px 4px 0px 0px;
-  z-index: 2;
+  font-size: 14px;
+}
+#content-container-aboutme #main-container-aboutme #info-container #buttons-box button:hover {
+  font-weight: bold;
+  border: 2px solid #232323;
+  border-bottom: none;
+}
+#content-container-aboutme #main-container-aboutme #info-container #buttons-box .notActive {
+  border-bottom: 1px solid #232323;
+}
+#content-container-aboutme #main-container-aboutme #info-container #buttons-box .notActive:hover {
+  border-bottom: 2px solid #232323;
 }
 #content-container-aboutme #main-container-aboutme #info-container p {
   font-family: "Urbanist", sans-serif;
@@ -195,127 +210,18 @@ body {
   margin-top: 8px;
 }
 #content-container-aboutme #main-container-aboutme #info-container #text-box {
-  border-top: 1px solid #232323;
-  z-index: 10;
+  width: 45vw;
 }
 #content-container-aboutme #main-container-aboutme #info-container #text-box p {
   margin-top: 8px;
+}
+#content-container-aboutme #main-container-aboutme #info-container #competence-box {
+  width: 45vw;
 }
 #content-container-aboutme #main-container-aboutme #info-container #competence-box p {
   margin-top: 8px;
 }
 
-/*
-#content-container-aboutme {
-    padding-top: 30px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;  
-
-    #side-container-aboutme {
-        padding-top:35px;
-        padding-left: 60px;
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;  
-
-        h1 {
-            color: $colorHeadLine;
-            justify-content: flex-end;
-            align-self: flex-end;
-            font-family: $fontHeader;
-            font-size: 8rem;
-            line-height: 0.65;
-            margin: 0px;   
-            z-index: 11;
-        }
-
-        h2 {
-            color: $colorHeadLine;
-            justify-content: flex-start;
-            align-self: flex-end;
-            font-family: $fontHeader;
-            font-size: 3.5rem;
-            margin: 0px; 
-            z-index: 11;           
-        }
-
-        img {
-            max-height: 80vh;
-            margin: 20px 15px 0px 20px;
-            position: fixed;
-            bottom: -2%;
-            left: 4%;
-            z-index: 10;
-        }
-
-    }
-
-    #main-container-aboutme {
-        padding: 40px 20px 40px 30px;
-        max-width: 60%;
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-self: flex-end;
-        align-items: flex-end;
-
-
-        #text-box {    
-            padding-top: 200px;
-            margin: 20px;
-            max-width: 65%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-end;
-
-            h2 {
-                font-family: $fontHeadlines;
-                font-size:2rem;
-                margin: 10px 0px;
-            }
-
-            p {
-                font-family: $fontHeadlines;
-                font-size:1rem;
-                margin: 0px;
-            }
-
-        }
-
-        img {
-            max-height: 90vh;
-            margin: 20px 15px 0px 20px;
-            position: fixed;
-            bottom: 0;
-        }
-
-        #link-section {
-            margin: 250px 0px 30px 0px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-end;
-
-            a {
-                margin: 30px 10px;
-                font-family: $fontLinks;
-                font-size: 2rem;
-                text-decoration: none;
-                color: #323232;
-            }
-
-            a:hover {
-                font-weight: bold;
-            }
-        }
-    }
-}*/
 #content-container-projects {
   padding-top: 30px;
   padding-bottom: 60px;
@@ -381,36 +287,47 @@ body {
   font-size: 1.2rem;
 }
 #content-container-projects #main-container-projects {
-  padding: 40px 20px 40px 30px;
+  padding: 30px 20px 40px 30px;
   max-width: 60%;
-  height: 100%;
+  height: 80vh;
   display: flex;
-  justify-content: flex-start;
-  align-self: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
 }
 #content-container-projects #main-container-projects #project-box {
-  margin: 20px 0px 10px 0px;
-  padding-top: 130px;
+  margin: 10px 0px;
+  padding-top: 20px;
   padding-left: 20px;
-  max-width: 90%;
-  max-height: 70%;
+  max-width: 70%;
+  height: 80%;
   overflow: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-start;
 }
-#content-container-projects #main-container-projects #project-box .project-card {
+#content-container-projects #main-container-projects #project-box .project-card, #content-container-projects #main-container-projects #project-box .project-card-notactive {
   display: flex;
   flex-direction: row;
-  max-width: 30%;
-  margin: 10px;
+  max-width: 15vw;
+  margin-top: 25px;
+  margin-right: 25px;
 }
-#content-container-projects #main-container-projects #project-box .project-card img {
+#content-container-projects #main-container-projects #project-box .project-card img, #content-container-projects #main-container-projects #project-box .project-card-notactive img {
   border-radius: 8px;
   width: 100%;
+  border: 1px solid #232323;
+}
+#content-container-projects #main-container-projects #project-box .project-card-notactive {
+  opacity: 50%;
+}
+#content-container-projects #main-container-projects #project-box .project-card-notactive img {
+  border: none;
+}
+#content-container-projects #main-container-projects #project-box .project-card-notactive:hover {
+  opacity: 100%;
 }
 
 #footer {
