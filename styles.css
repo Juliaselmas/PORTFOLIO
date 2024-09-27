@@ -60,11 +60,10 @@ body {
     font-weight: bold;
   }
   #content-container-home {
-    background-color: lightgreen;
     width: 100vw;
     min-height: 100vh;
     margin-bottom: 15px;
-    padding-top: 50px;
+    padding-top: 20px;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -73,8 +72,7 @@ body {
     align-self: center;
   }
   #content-container-home #main-container-homepage {
-    background-color: aqua;
-    padding-top: 80px;
+    padding-top: 40px;
     border-radius: 10px;
     width: 95vw;
     height: 100%;
@@ -103,7 +101,7 @@ body {
   }
   #content-container-home #main-container-homepage #text-link-container {
     display: flex;
-    width: 90vw;
+    width: 95vw;
     align-self: center;
   }
   #content-container-home #main-container-homepage #text-link-container #text-box-homepage {
@@ -112,7 +110,7 @@ body {
     align-items: flex-end;
     justify-content: flex-end;
     margin: 10px 10px 10px 30px;
-    width: 70%;
+    width: 75%;
   }
   #content-container-home #main-container-homepage #text-link-container #text-box-homepage p {
     color: #232323;
@@ -125,7 +123,7 @@ body {
   #content-container-home #main-container-homepage #text-link-container #main-container-links {
     justify-self: flex-start;
     margin: 10px 30px 10px 10px;
-    min-width: 30%;
+    min-width: 25%;
   }
   #content-container-home #main-container-homepage #text-link-container #main-container-links a {
     margin: 0px 10px 0px 2px;
@@ -232,9 +230,9 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     align-self: flex-start;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    width: 65%;
+    width: 75%;
     padding: 14px 6px 6px 6px;
   }
   #content-container-aboutme #main-container-aboutme #info-container #contact-box i {
@@ -244,12 +242,13 @@ body {
   }
   #content-container-aboutme #main-container-aboutme #info-container #contact-box p {
     margin-bottom: 8px;
+    font-size: 0.7rem;
   }
   #content-container-aboutme #main-container-aboutme #info-container #text-box, #content-container-aboutme #main-container-aboutme #info-container #competence-box {
     padding: 10px 16px;
     margin-top: 8px;
     width: 95%;
-    height: 70%;
+    height: 75%;
     overflow: auto;
     justify-self: center;
   }
@@ -261,7 +260,7 @@ body {
     padding-bottom: 40px;
     margin-bottom: 120px;
     height: 80vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -269,7 +268,8 @@ body {
   }
   #content-container-projects #side-container-projects {
     padding-top: 35px;
-    width: 60vw;
+    padding-right: 6px;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -314,7 +314,7 @@ body {
   #content-container-projects #main-container-projects {
     padding: 30px 0px;
     margin-top: 50px;
-    max-width: 55%;
+    width: 28%;
     height: 90%;
     display: flex;
     justify-content: center;
@@ -324,7 +324,7 @@ body {
   #content-container-projects #main-container-projects #project-box {
     margin: 10px 0px;
     padding-top: 10px;
-    max-width: 85%;
+    max-width: 100%;
     max-height: 95%;
     overflow: auto;
     display: flex;
@@ -336,8 +336,8 @@ body {
   #content-container-projects #main-container-projects #project-box .project-card, #content-container-projects #main-container-projects #project-box .project-card-notactive {
     display: flex;
     flex-direction: row;
-    max-width: 30vw;
-    margin: 10px;
+    width: 20vw;
+    margin: 10px 0px;
   }
   #content-container-projects #main-container-projects #project-box .project-card img, #content-container-projects #main-container-projects #project-box .project-card-notactive img {
     border-radius: 8px;
