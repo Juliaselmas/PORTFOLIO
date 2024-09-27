@@ -53,7 +53,7 @@ let projects = [
     keywords:
       "Agile Methodology • Collaboration • Time management • Local Storage • Javascript • HTML, CSS",
     liveLink: "https://example.com/productivity-app",
-    repoLink: "https://github.com/Juliaselmas/Productivity-App",
+    repoLink: "https://github.com/Juliaselmas/Productivity-application",
     imageAlt: "Project Preview-ProductivityApp",
   },
   {
@@ -61,7 +61,7 @@ let projects = [
     description:
       "A fun quiz app built with JavaScript, HTML & CSS. My first project in Javascript from my first year of my education.",
     keywords: "Javascript • HTML • CSS",
-    liveLink: "https://juliaselmas.github.io/quiz/",
+    liveLink: "https://juliaselmas.github.io/QUIZ/",
     repoLink: "https://github.com/Juliaselmas/QUIZ",
     imageAlt: "Project Preview-Quiz",
   },

@@ -1,15 +1,3 @@
-.gfs-didot-regular {
-  font-family: "GFS Didot", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.zen-kaku-gothic-new-light {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
 .oswald-headline {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -35,321 +23,647 @@ body {
   box-sizing: border-box;
 }
 
-#top-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  z-index: 1;
+@media (max-width: 576px) {
+  #top-container {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  }
+  #top-container #link-section {
+    position: fixed;
+    width: 95%;
+    margin: 16px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #top-container #link-section a {
+    margin: 20px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #323232;
+  }
+  #top-container #link-section a:hover {
+    font-weight: bold;
+  }
+  #content-container-home {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 15px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #content-container-home #main-container-homepage {
+    padding-top: 80px;
+    border-radius: 10px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #content-container-home #main-container-homepage h1 {
+    color: #c5390a;
+    justify-content: flex-end;
+    align-self: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 14rem;
+    line-height: 0.7;
+    margin: 0px;
+  }
+  #content-container-home #main-container-homepage h2 {
+    color: #c5390a;
+    justify-content: flex-start;
+    align-self: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 6rem;
+    margin: 0px;
+  }
+  #content-container-home #main-container-homepage #text-link-container {
+    display: flex;
+    width: 90vw;
+    align-self: center;
+  }
+  #content-container-home #main-container-homepage #text-link-container #text-box-homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 10px 10px 10px 30px;
+    width: 70%;
+  }
+  #content-container-home #main-container-homepage #text-link-container #text-box-homepage p {
+    color: #232323;
+    align-self: center;
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+    margin: 0px 2px;
+    align-self: flex-end;
+  }
+  #content-container-home #main-container-homepage #text-link-container #main-container-links {
+    justify-self: flex-start;
+    margin: 10px 30px 10px 10px;
+    min-width: 30%;
+  }
+  #content-container-home #main-container-homepage #text-link-container #main-container-links a {
+    margin: 0px 10px 0px 2px;
+    font-family: "Urbanist", sans-serif;
+    text-decoration: none;
+    color: #323232;
+  }
+  #content-container-home #main-container-homepage #text-link-container #main-container-links a img {
+    height: 2rem;
+  }
+  #content-container-aboutme {
+    padding-top: 100px;
+    width: 90%;
+    margin-top: 30px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  #content-container-aboutme #side-container-aboutme {
+    align-self: flex-end;
+    position: absolute;
+    top: 110vh;
+    right: 5vw;
+  }
+  #content-container-aboutme #side-container-aboutme img {
+    max-height: 42vh;
+    margin: 10px 10px 0px 10px;
+    border-radius: 8%;
+    box-shadow: 4px 4px 10px #a1a1a1;
+  }
+  #content-container-aboutme #main-container-aboutme {
+    padding: 0px 30px;
+    margin-top: 0;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: flex-end;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container {
+    padding: 0px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
+    width: 80%;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #buttons-box {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #buttons-box button {
+    background-color: #fceee5;
+    border: 1px solid #232323;
+    border-bottom: none;
+    padding: 6px 14px;
+    margin-right: 5px;
+    border-radius: 4px 4px 0px 0px;
+    font-size: 0.7rem;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #buttons-box button:hover {
+    font-weight: bold;
+    border: 2px solid #232323;
+    border-bottom: none;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #buttons-box .notActive {
+    border-bottom: 1px solid #232323;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #buttons-box .notActive:hover {
+    border-bottom: 2px solid #232323;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #contact-box {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #contact-box p {
+    margin-bottom: 8px;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #text-box, #content-container-aboutme #main-container-aboutme #info-container #competence-box {
+    padding: 10px 16px;
+    margin-top: 8px;
+    width: 95%;
+    max-height: 50%;
+    overflow: auto;
+    justify-self: center;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #text-box p, #content-container-aboutme #main-container-aboutme #info-container #competence-box p {
+    margin-top: 8px;
+  }
+  #content-container-projects {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    margin-bottom: 120px;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #content-container-projects #side-container-projects {
+    padding-top: 35px;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #content-container-projects #side-container-projects #project-info-container {
+    padding-top: 100px;
+    width: 100%;
+    color: #232323;
+    font-family: "Urbanist", sans-serif;
+    font-size: 14px;
+    text-align: end;
+  }
+  #content-container-projects #side-container-projects #project-info-container h3 {
+    font-size: 20px;
+  }
+  #content-container-projects #side-container-projects #project-info-container h4 {
+    margin: 50px 0px 0px 0px;
+    font-size: 14px;
+  }
+  #content-container-projects #side-container-projects #project-info-container p {
+    line-height: 1.5;
+  }
+  #content-container-projects #side-container-projects #project-info-container #link-container-projects {
+    text-decoration: none;
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  #content-container-projects #side-container-projects #project-info-container #link-container-projects a {
+    margin: 0px 10px 0px 2px;
+    font-family: "Urbanist", sans-serif;
+    text-decoration: none;
+    color: #323232;
+  }
+  #content-container-projects #side-container-projects #project-info-container #link-container-projects a img {
+    height: 1.5rem;
+  }
+  #content-container-projects #side-container-projects #project-info-container #link-container-projects a i {
+    font-size: 1.2rem;
+  }
+  #content-container-projects #main-container-projects {
+    padding: 30px 0px;
+    max-width: 55%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #content-container-projects #main-container-projects #project-box {
+    margin: 10px 0px;
+    padding-top: 10px;
+    max-width: 85%;
+    max-height: 95%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #content-container-projects #main-container-projects #project-box .project-card, #content-container-projects #main-container-projects #project-box .project-card-notactive {
+    display: flex;
+    flex-direction: row;
+    max-width: 30vw;
+    margin: 10px;
+  }
+  #content-container-projects #main-container-projects #project-box .project-card img, #content-container-projects #main-container-projects #project-box .project-card-notactive img {
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid #303030;
+    box-shadow: 4px 4px 10px #a1a1a1;
+  }
+  #content-container-projects #main-container-projects #project-box .project-card-notactive {
+    opacity: 50%;
+  }
+  #content-container-projects #main-container-projects #project-box .project-card-notactive img {
+    border: none;
+  }
+  #content-container-projects #main-container-projects #project-box .project-card-notactive:hover {
+    opacity: 100%;
+  }
+  #footer {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer #footer-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer #footer-content-container p {
+    color: #323232;
+    text-align: center;
+    margin: 6px 10px 6px 10px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 12px;
+    align-items: center;
+  }
+  #footer #footer-content-container #footer-links-container {
+    margin: 6px 10px;
+  }
+  #footer #footer-content-container #footer-links-container i {
+    font-size: 26px;
+  }
+  #footer #footer-content-container #footer-links-container a {
+    text-decoration: none;
+    color: #323232;
+  }
 }
-#top-container #link-section {
-  position: fixed;
-  width: 95%;
-  margin: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-#top-container #link-section a {
-  margin: 10px;
-  font-family: "Urbanist", sans-serif;
-  font-size: 2rem;
-  text-decoration: none;
-  color: #323232;
-}
-#top-container #link-section a:hover {
-  font-weight: bold;
-}
-
-#content-container-home {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#content-container-home #main-container-homepage {
-  border-radius: 10px;
-  width: 40%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-#content-container-home #main-container-homepage h1 {
-  color: #c5390a;
-  justify-content: flex-end;
-  align-self: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 15rem;
-  line-height: 0.7;
-  margin: 0px;
-}
-#content-container-home #main-container-homepage h2 {
-  color: #c5390a;
-  justify-content: flex-start;
-  align-self: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 6.5rem;
-  margin: 0px;
-}
-#content-container-home #main-container-homepage #text-link-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#content-container-home #main-container-homepage #text-link-container #text-box-homepage {
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-#content-container-home #main-container-homepage #text-link-container #text-box-homepage p {
-  color: #232323;
-  align-self: center;
-  font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  margin: 0px 2px;
-}
-#content-container-home #main-container-homepage #text-link-container #main-container-links a {
-  margin: 0px 10px 0px 2px;
-  font-family: "Urbanist", sans-serif;
-  text-decoration: none;
-  color: #323232;
-}
-#content-container-home #main-container-homepage #text-link-container #main-container-links a img {
-  height: 2rem;
-}
-
-#content-container-aboutme {
-  padding-top: 30px;
-  width: 100%;
-  margin-top: 20px;
-  height: 90vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-#content-container-aboutme #side-container-aboutme {
-  margin-top: 20px;
-  padding-left: 60px;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#content-container-aboutme #side-container-aboutme img {
-  max-height: 65vh;
-  margin: 10px 15px 0px 20px;
-  position: sticky;
-  top: 0;
-  border-radius: 8%;
-  left: 100;
-}
-#content-container-aboutme #main-container-aboutme {
-  padding: 0px 20px 40px 30px;
-  max-width: 60%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-self: center;
-  align-items: center;
-}
-#content-container-aboutme #main-container-aboutme #info-container {
-  padding-top: 100px;
-  margin: 20px;
-  width: 60vw;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-#content-container-aboutme #main-container-aboutme #info-container h2 {
-  font-family: "Urbanist", sans-serif;
-  font-size: 2rem;
-  margin: 10px 0px;
-}
-#content-container-aboutme #main-container-aboutme #info-container #buttons-box {
-  margin-top: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#content-container-aboutme #main-container-aboutme #info-container #buttons-box button {
-  background-color: #fceee5;
-  border: 1px solid #232323;
-  border-bottom: none;
-  padding: 6px 16px;
-  margin-right: 5px;
-  border-radius: 4px 4px 0px 0px;
-  font-size: 14px;
-}
-#content-container-aboutme #main-container-aboutme #info-container #buttons-box button:hover {
-  font-weight: bold;
-  border: 2px solid #232323;
-  border-bottom: none;
-}
-#content-container-aboutme #main-container-aboutme #info-container #buttons-box .notActive {
-  border-bottom: 1px solid #232323;
-}
-#content-container-aboutme #main-container-aboutme #info-container #buttons-box .notActive:hover {
-  border-bottom: 2px solid #232323;
-}
-#content-container-aboutme #main-container-aboutme #info-container p {
-  font-family: "Urbanist", sans-serif;
-  font-size: 1rem;
-  margin: 0;
-}
-#content-container-aboutme #main-container-aboutme #info-container #contact-box {
-  margin-bottom: 10px;
-}
-#content-container-aboutme #main-container-aboutme #info-container #contact-box p {
-  margin-top: 8px;
-}
-#content-container-aboutme #main-container-aboutme #info-container #text-box, #content-container-aboutme #main-container-aboutme #info-container #competence-box {
-  padding-top: 10px;
-  width: 45vw;
-}
-#content-container-aboutme #main-container-aboutme #info-container #text-box p, #content-container-aboutme #main-container-aboutme #info-container #competence-box p {
-  margin-top: 8px;
-}
-
-#content-container-projects {
-  padding-top: 30px;
-  padding-bottom: 60px;
-  height: 80vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-#content-container-projects #side-container-projects {
-  padding-top: 35px;
-  padding-left: 60px;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-#content-container-projects #side-container-projects #project-info-container {
-  padding-top: 100px;
-  max-width: 75%;
-  color: #232323;
-  font-family: "Urbanist", sans-serif;
-  font-size: 14px;
-  text-align: end;
-}
-#content-container-projects #side-container-projects #project-info-container h3 {
-  font-size: 20px;
-}
-#content-container-projects #side-container-projects #project-info-container h4 {
-  margin: 50px 0px 0px 0px;
-  font-size: 14px;
-}
-#content-container-projects #side-container-projects #project-info-container p {
-  line-height: 1.5;
-}
-#content-container-projects #side-container-projects #project-info-container #link-container-projects {
-  text-decoration: none;
-  padding-top: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-#content-container-projects #side-container-projects #project-info-container #link-container-projects a {
-  margin: 0px 10px 0px 2px;
-  font-family: "Urbanist", sans-serif;
-  text-decoration: none;
-  color: #323232;
-}
-#content-container-projects #side-container-projects #project-info-container #link-container-projects a img {
-  height: 1.5rem;
-}
-#content-container-projects #side-container-projects #project-info-container #link-container-projects a i {
-  font-size: 1.2rem;
-}
-#content-container-projects #main-container-projects {
-  padding: 30px 20px 40px 30px;
-  max-width: 60%;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-}
-#content-container-projects #main-container-projects #project-box {
-  margin: 10px 0px;
-  padding-top: 20px;
-  padding-left: 20px;
-  max-width: 70%;
-  height: 80%;
-  overflow: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-}
-#content-container-projects #main-container-projects #project-box .project-card, #content-container-projects #main-container-projects #project-box .project-card-notactive {
-  display: flex;
-  flex-direction: row;
-  max-width: 15vw;
-  margin-top: 25px;
-  margin-right: 25px;
-}
-#content-container-projects #main-container-projects #project-box .project-card img, #content-container-projects #main-container-projects #project-box .project-card-notactive img {
-  border-radius: 8px;
-  width: 100%;
-  border: 1px solid #232323;
-}
-#content-container-projects #main-container-projects #project-box .project-card-notactive {
-  opacity: 50%;
-}
-#content-container-projects #main-container-projects #project-box .project-card-notactive img {
-  border: none;
-}
-#content-container-projects #main-container-projects #project-box .project-card-notactive:hover {
-  opacity: 100%;
-}
-
-#footer {
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 20px 0px;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 11;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#footer #footer-content-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-#footer #footer-content-container p {
-  color: #323232;
-  text-align: center;
-  margin: 15px 10px;
-  font-family: "Urbanist", sans-serif;
-  font-size: 14px;
-  align-items: center;
-}
-#footer #footer-content-container #footer-links-container {
-  margin: 10px;
-}
-#footer #footer-content-container #footer-links-container i {
-  font-size: 26px;
-}
-#footer #footer-content-container #footer-links-container a {
-  text-decoration: none;
-  color: #323232;
+@media (min-width: 577px) {
+  #top-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+  }
+  #top-container #link-section {
+    position: fixed;
+    width: 95%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #top-container #link-section a {
+    margin: 10px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #323232;
+  }
+  #top-container #link-section a:hover {
+    font-weight: bold;
+  }
+  #content-container-home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #content-container-home #main-container-homepage {
+    border-radius: 10px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #content-container-home #main-container-homepage h1 {
+    color: #c5390a;
+    justify-content: flex-end;
+    align-self: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 15rem;
+    line-height: 0.7;
+    margin: 0px;
+  }
+  #content-container-home #main-container-homepage h2 {
+    color: #c5390a;
+    justify-content: flex-start;
+    align-self: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 6.5rem;
+    margin: 0px;
+  }
+  #content-container-home #main-container-homepage #text-link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #content-container-home #main-container-homepage #text-link-container #text-box-homepage {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  #content-container-home #main-container-homepage #text-link-container #text-box-homepage p {
+    color: #232323;
+    align-self: center;
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+    margin: 0px 2px;
+  }
+  #content-container-home #main-container-homepage #text-link-container #main-container-links a {
+    margin: 0px 10px 0px 2px;
+    font-family: "Urbanist", sans-serif;
+    text-decoration: none;
+    color: #323232;
+  }
+  #content-container-home #main-container-homepage #text-link-container #main-container-links a img {
+    height: 2rem;
+  }
+  #content-container-aboutme {
+    padding-top: 30px;
+    width: 100%;
+    margin-top: 20px;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #content-container-aboutme #side-container-aboutme {
+    margin-top: 20px;
+    padding-left: 60px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 2;
+  }
+  #content-container-aboutme #side-container-aboutme img {
+    max-height: 65vh;
+    margin: 10px 15px 0px 20px;
+    position: sticky;
+    top: 0;
+    border-radius: 8%;
+    left: 100;
+  }
+  #content-container-aboutme #main-container-aboutme {
+    padding: 0px 20px 40px 30px;
+    max-width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    align-items: center;
+    flex-shrink: 2;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container {
+    padding-top: 100px;
+    margin: 20px;
+    max-width: 60vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container h2 {
+    font-family: "Urbanist", sans-serif;
+    font-size: 2rem;
+    margin: 10px 0px;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #buttons-box {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #buttons-box button {
+    background-color: #fceee5;
+    border: 1px solid #232323;
+    border-bottom: none;
+    padding: 6px 16px;
+    margin-right: 5px;
+    border-radius: 4px 4px 0px 0px;
+    font-size: 14px;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #buttons-box button:hover {
+    font-weight: bold;
+    border: 2px solid #232323;
+    border-bottom: none;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #buttons-box .notActive {
+    border-bottom: 1px solid #232323;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #buttons-box .notActive:hover {
+    border-bottom: 2px solid #232323;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #contact-box {
+    margin-bottom: 10px;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #contact-box p {
+    margin-top: 8px;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #text-box, #content-container-aboutme #main-container-aboutme #info-container #competence-box {
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 45vw;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #text-box p, #content-container-aboutme #main-container-aboutme #info-container #competence-box p {
+    margin-top: 8px;
+  }
+  #content-container-projects {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #content-container-projects #side-container-projects {
+    padding-top: 35px;
+    padding-left: 60px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #content-container-projects #side-container-projects #project-info-container {
+    padding-top: 100px;
+    max-width: 75%;
+    color: #232323;
+    font-family: "Urbanist", sans-serif;
+    font-size: 14px;
+    text-align: end;
+  }
+  #content-container-projects #side-container-projects #project-info-container h3 {
+    font-size: 20px;
+  }
+  #content-container-projects #side-container-projects #project-info-container h4 {
+    margin: 50px 0px 0px 0px;
+    font-size: 14px;
+  }
+  #content-container-projects #side-container-projects #project-info-container p {
+    line-height: 1.5;
+  }
+  #content-container-projects #side-container-projects #project-info-container #link-container-projects {
+    text-decoration: none;
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  #content-container-projects #side-container-projects #project-info-container #link-container-projects a {
+    margin: 0px 10px 0px 2px;
+    font-family: "Urbanist", sans-serif;
+    text-decoration: none;
+    color: #323232;
+  }
+  #content-container-projects #side-container-projects #project-info-container #link-container-projects a img {
+    height: 1.5rem;
+  }
+  #content-container-projects #side-container-projects #project-info-container #link-container-projects a i {
+    font-size: 1.2rem;
+  }
+  #content-container-projects #main-container-projects {
+    padding: 30px 20px 40px 30px;
+    max-width: 60%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+  }
+  #content-container-projects #main-container-projects #project-box {
+    margin: 10px 0px;
+    padding-top: 20px;
+    padding-left: 20px;
+    max-width: 70%;
+    height: 80%;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #content-container-projects #main-container-projects #project-box .project-card, #content-container-projects #main-container-projects #project-box .project-card-notactive {
+    display: flex;
+    flex-direction: row;
+    max-width: 15vw;
+    margin-top: 25px;
+    margin-right: 25px;
+  }
+  #content-container-projects #main-container-projects #project-box .project-card img, #content-container-projects #main-container-projects #project-box .project-card-notactive img {
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid #232323;
+  }
+  #content-container-projects #main-container-projects #project-box .project-card-notactive {
+    opacity: 50%;
+  }
+  #content-container-projects #main-container-projects #project-box .project-card-notactive img {
+    border: none;
+  }
+  #content-container-projects #main-container-projects #project-box .project-card-notactive:hover {
+    opacity: 100%;
+  }
+  #footer {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer #footer-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer #footer-content-container p {
+    color: #323232;
+    text-align: center;
+    margin: 15px 10px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 14px;
+    align-items: center;
+  }
+  #footer #footer-content-container #footer-links-container {
+    margin: 10px;
+  }
+  #footer #footer-content-container #footer-links-container i {
+    font-size: 26px;
+  }
+  #footer #footer-content-container #footer-links-container a {
+    text-decoration: none;
+    color: #323232;
+  }
 }/*# sourceMappingURL=styles.css.map */
