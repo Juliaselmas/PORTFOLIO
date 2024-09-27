@@ -186,11 +186,11 @@ body {
     font-family: "Urbanist", sans-serif;
     font-size: 4rem;
     color: #c5390a;
-    margin: 10px 0px 30px 20px;
+    margin: 10px 0px 10px 20px;
     align-self: center;
   }
   #content-container-aboutme #main-container-aboutme #info-container #buttons-box {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     align-self: flex-start;
     justify-content: flex-start;
@@ -406,7 +406,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0px;
   }
   #footer #footer-content-container p {
     color: #323232;

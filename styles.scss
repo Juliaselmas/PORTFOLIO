@@ -235,14 +235,14 @@ body {
                         font-family: $fontHeadlines;
                         font-size:4rem;
                         color: $colorHeadLine;
-                        margin: 10px 0px 30px 20px;
+                        margin: 10px 0px 10px 20px;
                         align-self:center;
                         //margin: 10px;
                     }
                        
     
                     #buttons-box {
-                        margin-top: 30px;
+                        margin-top: 10px;
                         display: flex;
                         align-self: flex-start;
                         justify-content: flex-start;
@@ -506,7 +506,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin: 10px;
+        margin: 10px 0px;
     
     
         p {
