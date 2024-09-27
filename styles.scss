@@ -157,17 +157,19 @@ body {
     
                 #main-container-links {
                     justify-self: flex-start;
+                    flex-wrap: nowrap;
                     margin: 10px 30px 10px 10px;
-                    min-width: 25%;
+                    width: 35vw;
     
                     a {
-                        margin: 0px 10px 0px 2px;
+                
+                        margin: 0px 6px 0px 2px;
                         font-family: $fontLinks;
                         text-decoration: none;
                         color: #323232;
     
                         img {
-                            height: 2rem;
+                            max-height: 1.5rem;
                         }
                     }
                 }
@@ -459,7 +461,7 @@ body {
         }
     }
 
-    #back-to-top-container {
+   /* #back-to-top-container {
         //padding-bottom: 60px;
         height: 100%;
         font-family: $fontLinks;
@@ -482,6 +484,7 @@ body {
         }
 
     }
+    */
     
     #footer {
        background-color: rgba(254, 244, 244, 0.8);
