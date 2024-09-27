@@ -142,7 +142,7 @@ body {
     opacity: 90%;
     z-index: 3;
     margin: 10px 0px 0px 10px;
-    border-radius: 2%;
+    border-radius: 6px;
     box-shadow: 4px 4px 10px #a1a1a1;
   }
   #content-container-aboutme #main-container-aboutme {
@@ -184,9 +184,9 @@ body {
   }
   #content-container-aboutme #main-container-aboutme #info-container #buttons-box button {
     background-color: #fceee5;
-    border: 1px solid #232323;
+    border: 1px solid #c5390a;
     border-bottom: none;
-    color: #232323;
+    color: #c5390a;
     padding: 6px 14px;
     margin-right: 8px;
     border-radius: 4px 4px 0px 0px;
@@ -194,14 +194,14 @@ body {
   }
   #content-container-aboutme #main-container-aboutme #info-container #buttons-box button:hover {
     font-weight: bold;
-    border: 2px solid #232323;
+    border: 2px solid #c5390a;
     border-bottom: none;
   }
   #content-container-aboutme #main-container-aboutme #info-container #buttons-box .notActive {
-    border-bottom: 1px solid #232323;
+    border-bottom: 1px solid #c5390a;
   }
   #content-container-aboutme #main-container-aboutme #info-container #buttons-box .notActive:hover {
-    border-bottom: 2px solid #232323;
+    border-bottom: 2px solid #c5390a;
   }
   #content-container-aboutme #main-container-aboutme #info-container p {
     font-family: "Urbanist", sans-serif;
@@ -209,16 +209,23 @@ body {
     margin: 0;
   }
   #content-container-aboutme #main-container-aboutme #info-container #contact-box {
+    background-color: #fceee5;
+    border: 3px solid #c5390a;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    align-self: flex-start;
     margin-top: 20px;
     margin-bottom: 10px;
-    width: 95%;
+    width: 65%;
+    padding: 14px 6px 6px 6px;
   }
   #content-container-aboutme #main-container-aboutme #info-container #contact-box i {
     color: #c5390a;
+    margin-right: 6px;
+    margin-left: 6px;
   }
   #content-container-aboutme #main-container-aboutme #info-container #contact-box p {
     margin-bottom: 8px;
@@ -235,10 +242,10 @@ body {
     margin-top: 8px;
   }
   #content-container-projects {
-    padding-top: 20px;
-    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     margin-bottom: 120px;
-    height: 65vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -361,16 +368,23 @@ body {
   }
   #footer #footer-content-container #footer-links-container {
     margin: 6px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   #footer #footer-content-container #footer-links-container i {
     font-size: 18px;
+    margin-right: 4px;
   }
   #footer #footer-content-container #footer-links-container a {
     text-decoration: none;
     color: #323232;
+    margin-right: 4px;
   }
   #footer #footer-content-container #footer-links-container img {
     height: 14px;
+    margin-right: 4px;
   }
 }
 @media (min-width: 577px) {
