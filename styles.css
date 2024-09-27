@@ -74,7 +74,7 @@ body {
     justify-content: flex-end;
     align-self: center;
     font-family: "Oswald", sans-serif;
-    font-size: 14rem;
+    font-size: 12rem;
     line-height: 0.7;
     margin: 0px;
   }
@@ -83,7 +83,7 @@ body {
     justify-content: flex-start;
     align-self: center;
     font-family: "Oswald", sans-serif;
-    font-size: 6rem;
+    font-size: 5rem;
     margin: 0px;
   }
   #content-container-home #main-container-homepage #text-link-container {
@@ -138,7 +138,7 @@ body {
     right: 5vw;
   }
   #content-container-aboutme #side-container-aboutme img {
-    max-height: 42vh;
+    max-height: 40vh;
     margin: 10px 10px 0px 10px;
     border-radius: 8%;
     box-shadow: 4px 4px 10px #a1a1a1;
@@ -158,6 +158,7 @@ body {
     margin: 0px 10px 10px 10px;
     width: 80%;
     height: 68%;
+    color: #232323;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,6 +175,7 @@ body {
     background-color: #fceee5;
     border: 1px solid #232323;
     border-bottom: none;
+    color: #232323;
     padding: 6px 14px;
     margin-right: 5px;
     border-radius: 4px 4px 0px 0px;
@@ -217,7 +219,7 @@ body {
     padding-top: 20px;
     padding-bottom: 60px;
     margin-bottom: 120px;
-    height: 70vh;
+    height: 65vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -319,7 +321,7 @@ body {
     right: 0;
     z-index: 11;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
@@ -334,18 +336,21 @@ body {
     text-align: center;
     margin: 6px 10px 6px 10px;
     font-family: "Urbanist", sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     align-items: center;
   }
   #footer #footer-content-container #footer-links-container {
     margin: 6px 10px;
   }
   #footer #footer-content-container #footer-links-container i {
-    font-size: 26px;
+    font-size: 20px;
   }
   #footer #footer-content-container #footer-links-container a {
     text-decoration: none;
     color: #323232;
+  }
+  #footer #footer-content-container #footer-links-container img {
+    height: 15px;
   }
 }
 @media (min-width: 577px) {
