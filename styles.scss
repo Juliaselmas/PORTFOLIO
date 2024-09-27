@@ -206,10 +206,10 @@ body {
             }
         
             #main-container-aboutme {
-                padding: 0px 30px;
+                padding: 0px 30px 10px 0px;
                 margin-top: 0;
                 width: 100vw;
-                height: 70vh;
+                height: 85vh;
                 display: flex;
                 justify-content: center;
                 align-self:center;
@@ -218,11 +218,10 @@ body {
                     
             
                 #info-container {   
-
                     padding: 0px 10px 10px 10px;
                     margin: 20px 10px 10px 10px;
-                    width: 80%;
-                    height: 68%;
+                    width: 90%;
+                    height: 55vh;
                     color: $colorText;
                     display: flex;
                     flex-direction: column;
@@ -232,10 +231,11 @@ body {
 
                     h2 {
                         font-family: $fontHeadlines;
-                        font-size:2rem;
-                        margin: 10px 0px;
+                        font-size:4.8rem;
+                        color: $colorHeadLine;
+                        margin: 10px 0px 30px 50px;
                         align-self: flex-start;
-                        margin: 10px;
+                        //margin: 10px;
                     }
                        
     
@@ -249,41 +249,41 @@ body {
     
                         button {
                             background-color: $colorBackground;
-                            border: 1px solid #c5390a;
+                            border: 2px solid #c5390a;
                             border-bottom: none;
                             color: $colorHeadLine;
-                            padding: 6px 14px;
+                            //padding: 6px 14px;
                             margin-right: 8px;
                             border-radius: 4px 4px 0px 0px;
-                            font-size: 0.8rem;
+                            font-size: 1rem;
                         }
     
                         button:hover {
                             font-weight: bold;
-                            border: 2px solid #c5390a;
+                            //border: 2px solid #c5390a;
                             border-bottom: none;
                         }
     
                         .notActive {
-                            border-bottom: 1px solid #c5390a;
+                            border-bottom: 2px solid #c5390a;
+                            //background-color: #c5390a;
+                            
                         }
     
-                        .notActive:hover {
-                            border-bottom: 2px solid #c5390a;
-                        }
                     }
     
                 
                     p {
                         font-family: $fontHeadlines;
-                        font-size:0.9rem;
+                        font-size:1rem;
                         margin: 0;
                     }
     
                     #contact-box {
-                        background-color: $colorBackground;
-                        //box-shadow: 4px 4px 10px #c5390a;
-                        border: 3px solid #c5390a;
+                        
+                        position:absolute;
+                        top: 125vh;
+                        left: 5vw;
                         border-radius: 10px;
                         display: flex;
                         flex-direction: column;
@@ -292,11 +292,11 @@ body {
                         align-self: flex-start;
                         margin-top:10px;
                         margin-bottom: 10px;
-                        width: 75%;
-                        padding: 14px 6px 6px 6px;
+                        max-width: 85%;
+                        padding: 14px 10px 6px 6px;
 
                         i {
-                           color: $colorHeadLine;
+                           color: $colorText;
                            margin-right: 6px;
                            margin-left: 6px;
                         }
@@ -304,19 +304,27 @@ body {
     
                         p {
                             margin-bottom: 8px;
-                            font-size: 0.7rem;
+                            font-size:0.8rem;
+                            font-weight: bold;
+                            color: $colorHeadLine;
                            }
                     }
     
                     #text-box, #competence-box {
                         padding: 10px 16px;
                         margin-top: 8px;
-                        width: 95%;
-                        height: 75%;
+                        width: 100%;
+                        height: 50%;
                         overflow: auto;
+                        scrollbar-color: $colorHeadLine;
+                        display: flex;
                         justify-self: center;
+                        align-self: flex-end;
                         p {
                             margin-top: 8px;
+                            margin-left: 20px;
+                            text-align: left;
+                            font-size: 0.8rem;
                            }
                     }
                 }
@@ -354,7 +362,8 @@ body {
             text-align: end;
     
             h3 {
-                font-size: $fontSizeHeadlines; 
+                font-size: 1.8rem;
+                color: $colorHeadLine; 
             }
     
             h4 {
@@ -416,11 +425,13 @@ body {
                     align-items: center;
                     justify-content: center;
     
+                    .project-card {
+                        width: 22vw;
+                    }
                     .project-card, .project-card-notactive {
                         display: flex;
                         flex-direction: row;
-                       width: 20vw;
-                        margin: 10px 0px;
+                        margin: 10px 6px;
     
     
                         img {
@@ -434,6 +445,7 @@ body {
     
                     .project-card-notactive {
                         opacity: 50%;
+                        width: 20vw;
     
                         img {
                             border:none;
@@ -448,7 +460,7 @@ body {
     }
     
     #footer {
-       background-color: rgba(255, 255, 255, 0.3);
+       background-color: rgba(254, 244, 244, 0.8);
         padding: 10px 0px;
         width: 100%;
         position: fixed;
