@@ -147,7 +147,7 @@ body {
                         color: $colorText;
                         align-self: center;
                         font-family: $fontHeadlines;
-                        font-size: 20px;
+                        font-size: 18px;
                         margin: 0px 2px;
                         align-self: flex-end;
     
@@ -231,7 +231,7 @@ body {
 
                     h2 {
                         font-family: $fontHeadlines;
-                        font-size:4.5rem;
+                        font-size:4.1rem;
                         color: $colorHeadLine;
                         margin: 10px 0px 30px 50px;
                         align-self: flex-start;
@@ -464,7 +464,7 @@ body {
         height: 100%;
         font-family: $fontLinks;
         position: relative;
-        bottom: 18vh;
+        bottom: 20vh;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -479,10 +479,6 @@ body {
             i {
                 margin-right: 10px;
             }
-        }
-
-        a:hover {
-            font-size: 1.2rem;
         }
 
     }

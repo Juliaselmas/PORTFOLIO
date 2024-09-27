@@ -116,7 +116,7 @@ body {
     color: #232323;
     align-self: center;
     font-family: "Urbanist", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0px 2px;
     align-self: flex-end;
   }
@@ -183,7 +183,7 @@ body {
   }
   #content-container-aboutme #main-container-aboutme #info-container h2 {
     font-family: "Urbanist", sans-serif;
-    font-size: 4.5rem;
+    font-size: 4.1rem;
     color: #c5390a;
     margin: 10px 0px 30px 50px;
     align-self: flex-start;
@@ -366,7 +366,7 @@ body {
     height: 100%;
     font-family: "Urbanist", sans-serif;
     position: relative;
-    bottom: 18vh;
+    bottom: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -379,9 +379,6 @@ body {
   }
   #back-to-top-container a i {
     margin-right: 10px;
-  }
-  #back-to-top-container a:hover {
-    font-size: 1.2rem;
   }
   #footer {
     background-color: rgba(254, 244, 244, 0.8);
