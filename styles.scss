@@ -180,7 +180,9 @@ body {
                right: 5vw;
             
                 img {
-                    max-height: 40vh;
+                    max-height: 35vh;
+                    opacity: 80%;
+                    z-index: 3;
                     margin: 10px 10px 0px 10px;
                     border-radius: 8%;
                     box-shadow: 4px 4px 10px #a1a1a1;
@@ -198,6 +200,7 @@ body {
                 justify-content: center;
                 align-self:center;
                 align-items: flex-end;
+                z-index: 2;
                     
             
                 #info-container {    
@@ -414,7 +417,7 @@ body {
         
         #footer-content-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     
@@ -429,10 +432,10 @@ body {
         }
     
         #footer-links-container {
-            margin: 6px 10px;
+            margin: 6px;
     
             i {
-                font-size: 20px;
+                font-size: 18px;
             }
     
             a {
@@ -441,7 +444,7 @@ body {
             }
 
             img {
-                height: 15px;
+                height: 14px;
             }
         }
     
