@@ -183,9 +183,9 @@ body {
   }
   #content-container-aboutme #main-container-aboutme #info-container h2 {
     font-family: "Urbanist", sans-serif;
-    font-size: 4.1rem;
+    font-size: 4rem;
     color: #c5390a;
-    margin: 10px 0px 30px 50px;
+    margin: 10px 0px 30px 20px;
     align-self: flex-start;
   }
   #content-container-aboutme #main-container-aboutme #info-container #buttons-box {
