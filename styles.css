@@ -152,7 +152,7 @@ body {
     right: -8vw;
   }
   #content-container-aboutme #side-container-aboutme img {
-    max-height: 40vh;
+    max-height: 35vh;
     opacity: 90%;
     z-index: 3;
     margin: 10px 0px 0px 10px;
@@ -186,13 +186,13 @@ body {
     font-family: "Urbanist", sans-serif;
     font-size: 4rem;
     color: #c5390a;
-    margin: 10px 0px 10px 20px;
+    margin: 10px 0px 30px 20px;
     align-self: center;
   }
   #content-container-aboutme #main-container-aboutme #info-container #buttons-box {
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
-    align-self: flex-start;
+    align-self: center;
     justify-content: flex-start;
     align-items: flex-start;
   }
@@ -247,8 +247,6 @@ body {
     padding: 10px 16px;
     margin-top: 8px;
     width: 100%;
-    height: 50%;
-    overflow: auto;
     scrollbar-color: #c5390a;
     display: flex;
     justify-self: center;
@@ -257,8 +255,9 @@ body {
   #content-container-aboutme #main-container-aboutme #info-container #text-box p, #content-container-aboutme #main-container-aboutme #info-container #competence-box p {
     margin-top: 8px;
     margin-left: 20px;
-    text-align: left;
-    font-size: 0.8rem;
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.3;
   }
   #content-container-projects {
     padding-top: 80px;
@@ -363,78 +362,26 @@ body {
   #content-container-projects #main-container-projects #project-box .project-card-notactive:hover {
     opacity: 100%;
   }
-  /* #back-to-top-container {
-       //padding-bottom: 60px;
-       height: 100%;
-       font-family: $fontLinks;
-       position: relative;
-       bottom: 20vh;
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       align-self: flex-start;
-
-
-
-       a {
-           font-size: 0.8rem;
-           text-decoration: none;
-           color: $colorText;
-           i {
-               margin-right: 10px;
-           }
-       }
-
-   }
-   */
-  #footer {
-    background-color: rgba(254, 244, 244, 0.8);
-    padding: 10px 0px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 11;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  #footer #footer-content-container {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0px;
-  }
-  #footer #footer-content-container p {
-    color: #323232;
-    text-align: center;
-    margin: 6px 0px;
+  #back-to-top-container {
+    height: 100%;
     font-family: "Urbanist", sans-serif;
-    font-size: 11px;
-    align-items: center;
-  }
-  #footer #footer-content-container #footer-links-container {
-    margin: 6px 10px;
+    position: relative;
+    bottom: 15vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    align-self: center;
   }
-  #footer #footer-content-container #footer-links-container i {
-    font-size: 18px;
-    margin-right: 4px;
-  }
-  #footer #footer-content-container #footer-links-container a {
+  #back-to-top-container a {
+    font-size: 0.8rem;
     text-decoration: none;
-    color: #323232;
-    margin-right: 4px;
+    color: #232323;
   }
-  #footer #footer-content-container #footer-links-container img {
-    height: 14px;
-    margin-right: 4px;
+  #back-to-top-container a i {
+    margin-right: 10px;
+  }
+  #footer {
+    display: none;
   }
 }
 @media (min-width: 577px) {
@@ -561,7 +508,7 @@ body {
     flex-shrink: 2;
   }
   #content-container-aboutme #main-container-aboutme #info-container {
-    padding-top: 100px;
+    padding-top: 180px;
     margin: 20px;
     max-width: 60vw;
     height: 50vh;
@@ -572,8 +519,12 @@ body {
   }
   #content-container-aboutme #main-container-aboutme #info-container h2 {
     font-family: "Urbanist", sans-serif;
-    font-size: 2rem;
-    margin: 10px 0px;
+    color: #c5390a;
+    font-size: 8rem;
+    margin: 10px 0px 0px 0px;
+    position: absolute;
+    top: 115vh;
+    left: 25vw;
   }
   #content-container-aboutme #main-container-aboutme #info-container #buttons-box {
     margin-top: 16px;
@@ -619,6 +570,11 @@ body {
   }
   #content-container-aboutme #main-container-aboutme #info-container #text-box p, #content-container-aboutme #main-container-aboutme #info-container #competence-box p {
     margin-top: 8px;
+  }
+  #content-container-aboutme #main-container-aboutme #info-container #text-box #competence-keywords, #content-container-aboutme #main-container-aboutme #info-container #competence-box #competence-keywords {
+    margin: 12px 0px;
+    text-align: justify;
+    font-size: 1.1rem;
   }
   #content-container-projects {
     padding-top: 30px;
@@ -754,5 +710,8 @@ body {
   #footer #footer-content-container #footer-links-container a {
     text-decoration: none;
     color: #323232;
+  }
+  #back-to-top-container {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -196,7 +196,7 @@ body {
                right: -8vw;
             
                 img {
-                    max-height: 40vh;
+                    max-height: 35vh;
                     opacity: 90%;
                     z-index: 3;
                     margin: 10px 0px 0px 10px;
@@ -235,16 +235,15 @@ body {
                         font-family: $fontHeadlines;
                         font-size:4rem;
                         color: $colorHeadLine;
-                        margin: 10px 0px 10px 20px;
+                        margin: 10px 0px 30px 20px;
                         align-self:center;
-                        //margin: 10px;
                     }
                        
     
                     #buttons-box {
-                        margin-top: 10px;
+                        margin-top: 30px;
                         display: flex;
-                        align-self: flex-start;
+                        align-self: center;
                         justify-content: flex-start;
                         align-items: flex-start;
     
@@ -254,7 +253,6 @@ body {
                             border: 2px solid #c5390a;
                             border-bottom: none;
                             color: $colorHeadLine;
-                            //padding: 6px 14px;
                             margin-right: 8px;
                             border-radius: 4px 4px 0px 0px;
                             font-size: 1rem;
@@ -262,14 +260,11 @@ body {
     
                         button:hover {
                             font-weight: bold;
-                            //border: 2px solid #c5390a;
                             border-bottom: none;
                         }
     
                         .notActive {
                             border-bottom: 2px solid #c5390a;
-                            //background-color: #c5390a;
-                            
                         }
     
                     }
@@ -316,8 +311,8 @@ body {
                         padding: 10px 16px;
                         margin-top: 8px;
                         width: 100%;
-                        height: 50%;
-                        overflow: auto;
+                        //height: 70%;
+                        //overflow: auto;
                         scrollbar-color: $colorHeadLine;
                         display: flex;
                         justify-self: center;
@@ -325,8 +320,9 @@ body {
                         p {
                             margin-top: 8px;
                             margin-left: 20px;
-                            text-align: left;
-                            font-size: 0.8rem;
+                            text-align: center;
+                            font-size: 0.9rem;
+                            line-height: 1.3;
                            }
                     }
                 }
@@ -461,16 +457,15 @@ body {
         }
     }
 
-   /* #back-to-top-container {
-        //padding-bottom: 60px;
+   #back-to-top-container {
         height: 100%;
         font-family: $fontLinks;
         position: relative;
-        bottom: 20vh;
+        bottom: 15vh;
         display: flex;
         flex-direction: row;
         align-items: center;
-        align-self: flex-start;
+        align-self: center;
 
        
 
@@ -484,67 +479,10 @@ body {
         }
 
     }
-    */
+    
 
     #footer {
-       background-color: rgba(254, 244, 244, 0.8);
-        padding: 10px 0px;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        z-index: 11;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    
-        
-        #footer-content-container {
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 10px 0px;
-    
-    
-        p {
-            color: #323232;
-            text-align: center;
-            margin: 6px 0px;
-            font-family: $fontText;
-            font-size: 11px;
-            align-items: center;
-        }
-    
-        #footer-links-container {
-            margin: 6px 10px;
-            display: flex;
-            flex-direction: row;
-            align-items: center; 
-            justify-content: center;
-    
-            i {
-                font-size: 18px;
-                margin-right: 4px;
-            }
-    
-            a {
-                text-decoration: none;
-                color: #323232;
-                margin-right: 4px;
-            }
-
-            img {
-                height: 14px;
-                margin-right: 4px;
-            }
-        }
-    
-     }
-    
-        
+        display: none;    
     } 
     
 }
@@ -703,7 +641,7 @@ body {
                     
             
                 #info-container {    
-                    padding-top: 100px;
+                    padding-top: 180px;
                     margin: 20px;
                     max-width: 60vw;
                     height: 50vh;
@@ -714,8 +652,12 @@ body {
                        
                     h2 {
                         font-family: $fontHeadlines;
-                        font-size:2rem;
-                        margin: 10px 0px;
+                        color: $colorHeadLine;
+                        font-size:8rem;
+                        margin: 10px 0px 0px 0px;
+                        position: absolute;
+                        top: 115vh;
+                        left: 25vw;
                     }
     
                     #buttons-box {
@@ -772,7 +714,14 @@ body {
                         width: 45vw;
                         p {
                             margin-top: 8px;
+
                            }
+
+                        #competence-keywords {
+                            margin: 12px 0px;
+                            text-align:justify;
+                            font-size: 1.1rem;
+                        }
                     }
                 }
             }
@@ -947,5 +896,9 @@ body {
     
         
     } 
+
+    #back-to-top-container {
+        display: none;
+    }
 
 }

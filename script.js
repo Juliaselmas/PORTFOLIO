@@ -52,7 +52,7 @@ let projects = [
       "A productivity app to manage your daily tasks and habits. A project made in collaboration with Nina Norrby and Sofia Ledin with focus on agile methodology. Build with Javascript, HTML & CSS.",
     keywords:
       "Agile Methodology • Collaboration • Time management • Local Storage • Javascript • HTML, CSS",
-    liveLink: "https://example.com/productivity-app",
+    liveLink: "",
     repoLink: "https://github.com/Juliaselmas/Productivity-application",
     imageAlt: "Project Preview-ProductivityApp",
   },
@@ -71,7 +71,7 @@ let projects = [
       "An introduction to using Javascript in backend. Creating API's for item inventory and users by CRUD.",
     keywords:
       "Backend • CRUD • Next.js • API • Docker • Postman • Javascript • HTML • CSS",
-    liveLink: "/.",
+    liveLink: "",
     repoLink: "https://github.com/Juliaselmas/js-backend",
     imageAlt: "Project Preview-Inventory",
   },
@@ -93,11 +93,22 @@ function activateProject(index) {
   projectDescription.innerText = activeProject.description;
   projectKeyWords.innerText = activeProject.keywords;
 
-  linkContainer.innerHTML = `
-  <a href="${activeProject.liveLink}" target="_blank"><i class="fa-solid fa-desktop"></i></a>
-  <a href="${activeProject.repoLink}" target="_blank"><img src="logos/Github-Logos/github-mark.png" alt="GitHub Repository"></a>
-`;
+  // Skapa länkar dynamiskt, men visa bara liveLink om den inte är tom
+  let liveLinkHTML = activeProject.liveLink
+    ? `<a href="${activeProject.liveLink}" class="icon" target="_blank"><i class="fa-solid fa-desktop"></i></a>`
+    : "";
+
+  let repoLinkHTML = `<a href="${activeProject.repoLink}" target="_blank"><img src="logos/Github-Logos/github-mark.png" alt="GitHub Repository"></a>`;
+
+  // Lägg till länkarna till linkContainer
+  linkContainer.innerHTML = liveLinkHTML + repoLinkHTML;
 }
+
+projectCards.forEach((card, index) => {
+  card.addEventListener("click", () => activateProject(index));
+});
+
+activateProject(0);
 
 projectCards.forEach((card, index) => {
   card.addEventListener("click", () => activateProject(index));
